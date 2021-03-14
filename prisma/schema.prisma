@@ -1,19 +1,22 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
+generator client {
+  provider = "prisma-client-js"
+}
 
 datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
 
-generator client {
-  provider = "prisma-client-js"
-}
-
-
-model Job {
-  id        Int      @default(autoincrement()) @id
-  createdAt DateTime @default(now())
-  title     String   @db.VarChar(255)
-  content   String?
+model turing_jobs {
+  id            Int       @id @default(autoincrement()) @db.UnsignedInt
+  job_url       String?   @unique @db.VarChar(255)
+  job_title     String?   @db.VarChar(255)
+  job_content   String?   @db.VarChar(255)
+  published_at  DateTime? @db.DateTime(0)
+  created_by    Int?
+  updated_by    Int?
+  created_at    DateTime? @default(now()) @db.Timestamp(0)
+  updated_at    DateTime? @default(now()) @db.Timestamp(0)
+  requirement   String?   @db.LongText
+  job_image_url String?   @db.VarChar(255)
 }

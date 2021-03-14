@@ -1,6 +1,10 @@
+import Layout from '../component/layout'
+
 function FaqPage() {
   return (
-    <div>Turing faq page</div>
+    <Layout>
+      <div>Turing faq page</div>
+    </Layout>
   )
 }
 

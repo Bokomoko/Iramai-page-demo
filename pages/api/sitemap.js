@@ -1,20 +1,16 @@
 const builder = require("xmlbuilder");
-const { PrismaClient } = require('@prisma/client')
+const { getAllJobs } = require("../jobs/job_data");
 const globby = require("globby");
-
-const prisma = new PrismaClient()
 
 export default async (req, res) => {
   try {
     //Get all the data to generate dynamic sitemap
-    const allJobs = await prisma.job.findMany({
-      select: {
-        title: true,
-      },
-    });
+    const allJobs = await getAllJobs();
+    console.log(allJobs);
     const pages = await globby([
       'pages/**/*.{js,tsx,mdx}', // All routes inside /pages,
       '!pages/api', // Ignore API routes
+      '!pages/jobs', // Ignore API routes      
       '!pages/**/[*.{js,tsx}' // Ignore my dynamic route index Example /pages/jobs/[id].js
     ]);
 
@@ -42,7 +38,7 @@ export default async (req, res) => {
     // Build dynamic job pages
     allJobs.forEach((element) => {
       var url = root.ele("url");
-      url.ele("loc", `http://www.turing.com/${element.title}/`)
+      url.ele("loc", `http://www.turing.com/jobs/${element.url}/`)
       //url.ele("lastmod", `${new Date(element.updated_at).toISOString()}`)
       url.ele("changefreq", `monthly`);
       url.ele("priority", `0.8`);
@@ -50,6 +46,7 @@ export default async (req, res) => {
     var xml = root.end({ pretty: true });
     res.statusCode = 200
     //Set appropriate header
+    console.log(xml);
     res.setHeader("Content-Type", "text/xml");
     res.send(xml);
   } catch (error) {

@@ -1,29 +1,32 @@
-import Layout from '../../component/layout'
-
-const { PrismaClient } = require('@prisma/client')
-
-const prisma = new PrismaClient()
+import Layout from '../../component/layout';
+import { getJobData, getAllJobs } from './job_data';
+import ReactMarkdown from "react-markdown";
 
 function Jobs({ jobData }) {
   return (
     <Layout>
-      {jobData.title} : {jobData.content}
+      <br></br>
+      Title: <br></br>
+      {jobData.title} <br></br>
+      <br></br>
+      Content: <br></br>
+      {jobData.description} <br></br>
+      <br></br>
+      Requirement: <br></br>
+      <ReactMarkdown source={jobData.requirements} /> <br></br>
+      <br></br>
+      <img src={""} alt="" width="100"/>
     </Layout>
   )
 }
 
 // Return a list of possible value for id
 export async function getStaticPaths() {
-  const jobs = await prisma.job.findMany({
-    select: {
-      id: true,
-      title: true,
-    },
-  })
-  console.log(jobs);
+  let allJobs = await getAllJobs();
+
   // Get the paths we want to pre-render based on posts
-  const paths = jobs.map(job => ({
-    params: { id: job.title },
+  const paths = allJobs.map(job => ({
+    params: { id: job.url },
   }))
 
   return {
@@ -35,15 +38,7 @@ export async function getStaticPaths() {
 
 // Fetch necessary data for the blog post using params.id
 export async function getStaticProps({ params }) {
-  const jobData = await prisma.job.findFirst({
-    where: {
-      title: params.id,
-    },
-    select: {
-      title: true,
-      content: true,
-    },
-  })
+  const jobData = await getJobData(params.id);
 
   return {
     props: {

@@ -1,6 +1,10 @@
+import Layout from '../component/layout'
+
 function TermsOfService() {
   return (
-    <div>Turing terms of service page</div>
+    <Layout>
+      <div>Turing terms of service page</div>
+    </Layout>
   )
 }
 
