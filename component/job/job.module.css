@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.cv_container {
+    font-family: "Gordita Regular";
+    display: flex;
+    width: 95%;
+    margin: 1.5rem auto;
+    justify-content: space-around;
+    min-height: 88vh;
+}
+
+.cv_container .main_content {
+    padding: 2.5rem;
+    background-color: #fff;
+    width: 65%;
+}
+
+.main_content .links {
+    display: flex;
+    align-items: center;
+}
+
+.main_content .links span {
+    color: #888888;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin-right: 1.5rem;
+}
+
+.main_content .links .icons {
+    display: flex;
+    align-items: center;
+}
+
+.main_content .links .icons img {
+    width: 32px;
+    height: 32px;
+    margin_right: 0.75rem;
+}
+
+.cv_description {
+    margin-bottom: 80px;
+}
+
+.cv_description .title {
+    text-align: left;
+    font-size: 1.75rem;
+    line-height: 2.375rem;
+    letter-spacing: 0px;
+    color: #212121;
+    margin-bottom: 2rem;
+}
+
+.cv_description .list {
+    padding-left: 20px;
+}
+
+.cv-description .list li {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: 0px;
+    color: #444444;
+    opacity: 1;
+}
+
+.cv-container .sub_content {
+    background-color: #fcfcfc;
+    width: 35%;
+    padding: 2.5rem;
+    border: 4px;
+}
+
+.cv-container .sub_content .user_info {
+    background-color: #fff;
+    padding: 32px 29px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4.375rem;
+}
+
+.user_info .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.user_info .avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.user_info .basic_info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.user_info .basic_info .fa {
+    color: #cccccc;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.user_info .basic_info .content {
+    text-align: center;
+}
+
+.user_info .basic_info .content .name {
+    color: #212121;
+    font-size: 1.5rem;
+    line-height: 1.625rem;
+    margin-bottom: 8px;
+}
+
+.user_info .basic_info .content .job_title {
+    color: #666666;
+    font-size: 1rem;
+    line-height: 1.875rem;
+}
+
+.user_info .description {
+    color: #666666;
+    font-size: 0.875rem;
+    line-height: 1.325rem;
+}
+
+.open_job_title {
+    color: #212121;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+}
+
+.bases {
+    margin-top: 2.75rem;
+}
+
+.bases .title {
+    margin-bottom: 1.5rem;
+    color: #212121;
+}
+
+.bases .tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    border-radius: 50px;
+    padding: 6px 12px 6px 8px;
+    color: #444;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    margin: 0 0.5rem 0.5rem 0;
+}
+
+.tag i {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.tag.green {
+    background-color: #41bfad0f;
+}
+
+.tag.green i {
+    color: #41bfad;
+}
+
+.tag.vio {
+    background-color: #6c7bd40f;
+}
+
+.tag.vio i {
+    color: #6c7bd4;
+}
+
+@media only screen and (max-width: 1024px) {
+    .cv-container {
+        flex-direction: column;
+    }
+    .cv-container .sub_content {
+        width: 100%;
+    }
+    .cv-container .main_content {
+        width: 100%;
+    }
+}

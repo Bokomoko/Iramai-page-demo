@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "Ginto Nord";
+    src: url('/fonts/Ginto-Nord-Regular.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Ginto Nord";
+    src: url('/fonts/Ginto-Nord-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Ginto";
+    src: url('/fonts/Ginto-Regular.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Ginto";
+    src: url('/fonts/Ginto-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Ginto";
+    src: url('/fonts/Ginto-Thin.ttf') format('truetype');
+    font-weight: 100;
+}
+@font-face {
+    font-family: "Gordita";
+    src: url('/fonts/hinted-GorditaRegular.ttf') format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Gordita";
+    src: url('/fonts/hinted-GorditaBold.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Gordita";
+    src: url('/fonts/hinted-GorditaMedium.ttf') format('truetype');
+    font-weight: 300;
+}
