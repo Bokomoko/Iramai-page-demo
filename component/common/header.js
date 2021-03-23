@@ -1,10 +1,11 @@
 import Link from 'next/link'
+import styles from '../job/job.module.css'
 
 function Header() {
   return (
-    <div>
-      This is Header for Turing website
-    </div>
+    <main className={styles.cv_container}>
+
+    </main>
   )
 }
 

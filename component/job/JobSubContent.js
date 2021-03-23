@@ -7,7 +7,7 @@ function JobSubContent () {
         <article className={styles.sub_content}>
             <section className={styles.user_info}>
                 <div className={styles.avatar}>
-                    <Image src="/assets/32.jpg" alt="avatar"/>
+                    <Image src="/assets/32.jpg" alt="avatar" width={100} height={100}/>
                 </div>
                 <div className={styles.basic_info}>
                     <i className={classNames(styles.fa, 'fa-chevron-left')}></i>

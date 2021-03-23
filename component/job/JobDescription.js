@@ -51,16 +51,16 @@ function JobDescription() {
                 <span>Share this job</span>
                 <div className={styles.icons}>
                     <a href="#">
-                        <Image src="/icons/facebook.svg"/>
+                        <Image src="/icons/facebook.svg" width={32} height={32}/>
                     </a>
                     <a href="#">
-                        <Image src="/icons/twitter.svg"/>
+                        <Image src="/icons/twitter.svg" width={32} height={32}/>
                     </a>
                     <a href="#">
-                        <Image src="/icons/linkedin.svg"/>
+                        <Image src="/icons/linkedin.svg" width={32} height={32}/>
                     </a>
                     <a href="#">
-                        <Image src="/icons/whatsapp.svg"/>
+                        <Image src="/icons/whatsapp.svg" width={32} height={32}/>
                     </a>
                 </div>
             </footer>
