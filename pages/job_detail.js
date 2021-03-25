@@ -3,16 +3,25 @@ import JobDescription from "../component/job/JobDescription";
 import React from "react";
 import JobSubContent from "../component/job/JobSubContent";
 import styles from "../component/job/job.module.css";
+import TuringProcess from "../component/job/TuringProcess";
+import JobReason from "../component/job/JobReason";
+import Container from "react-bootstrap/Container";
+import JobApply from "../component/job/JobApply";
 
 function PrivatePolicy() {
     return (
         <Layout>
-            <div className={styles.body}>
-                <div className={styles.cv_container}>
-                    <JobDescription/>
-                    <JobSubContent/>
-                </div>
+            <JobApply/>
+            <JobReason/>
+            <div className={styles.cv_container}>
+                <Container>
+                    <div className="d-md-flex align-items-stretch">
+                        <JobDescription/>
+                        <JobSubContent/>
+                    </div>
+                </Container>
             </div>
+            <TuringProcess/>
         </Layout>
     )
 }
