@@ -5,6 +5,12 @@ import Container from 'react-bootstrap/Container';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
 
+// cover_title : the title of the job
+// description : multine description of the job
+// cover_cta : label of the button to apply to this job
+// cta_url : link to page for application to this job
+// Button : will have a prop that points to the application page of this job
+
 export default function Cover(props) {
   const { cover_title, description, cover_cta, cta_url } = props;
 

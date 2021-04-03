@@ -1,3 +1,7 @@
+// simple page to test new components
+
+// as of april 03 -> Cover component
+
 import React from 'react';
 import Cover from '../component/job/cover';
 
