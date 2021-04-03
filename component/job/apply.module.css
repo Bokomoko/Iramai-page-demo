@@ -1,6 +1,5 @@
 .main {
-    width: 100%;
-    height: 640px;
+
     font-family: Gordita Regular;
     box-sizing: border-box;
     margin: 0;
@@ -8,8 +7,22 @@
     background: transparent linear-gradient(90deg, #212121CC 0%, #212121A3 50%, #21212100 100%) 0 0 no-repeat padding-box;
     background-image: url("/assets/mask_group.png");
     opacity: 1;
+    max-width: 100%;
+    height: 600px;
     flex-direction: column;
 }
+
+.blur {
+    -webkit-filter: brightness(0.6);
+    -moz-filter: brightness(0.6);
+    -o-filter: brightness(0.6);
+    -ms-filter: brightness(0.6);
+}
+
+.islands_bg {
+    position: absolute;
+}
+
 
 .header {
     width: 60%;
