@@ -7,7 +7,7 @@ import Cover from '../component/job/cover';
 import FancyList from '../component/job/fancylist';
 
 export default function Test() {
-  const listOfResponsabilities = [
+  const listOfResponsibilities = [
     'Design and build scalable APIs',
     'Write clean, efficient, and reusable code',
     'Develop highly efficient user interface components',
@@ -38,8 +38,8 @@ export default function Test() {
         cta_url="page for applying to job"
       />
       <FancyList
-        listTitle="Job responsabilities"
-        listItems={listOfResponsabilities}
+        listTitle="Job responsibilities"
+        listItems={listOfResponsibilities}
       />
       <FancyList
         listTitle="Minimum requirements"
