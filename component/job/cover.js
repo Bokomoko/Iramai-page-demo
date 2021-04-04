@@ -9,10 +9,18 @@ import { Button } from 'react-bootstrap';
 // description : multine description of the job
 // cover_cta : label of the button to apply to this job
 // cta_url : link to page for application to this job
-// Button : will have a prop that points to the application page of this job
+// image_cover : image to be used as background for cover page
+// image_alt_text : text for image background
 
 export default function Cover(props) {
-  const { cover_title, description, cover_cta, cta_url } = props;
+  const {
+    cover_title,
+    description,
+    cover_cta,
+    cta_url,
+    image_cover,
+    image_alt_text,
+  } = props;
 
   return (
     <div className={styles.coverimage}>

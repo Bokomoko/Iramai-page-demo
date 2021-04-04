@@ -3,6 +3,7 @@
 // as of april 03 -> Responsabilities
 
 import React from 'react';
+import Cover from '../component/job/cover';
 import FancyList from '../component/job/fancylist';
 
 export default function Test() {
@@ -30,6 +31,12 @@ export default function Test() {
 
   return (
     <>
+      <Cover
+        cover_title="Remote React/Node Developer Jobs"
+        description="At Turing, we are looking for a Full Stack Developer specializing in React and Node.js who will be responsible for the entire web development process to deliver highly scalable, customer-centric, and performant web applications."
+        cover_cta="Apply as React/Node Developer"
+        cta_url="page for applying to job"
+      />
       <FancyList
         listTitle="Job responsabilities"
         listItems={listOfResponsabilities}
