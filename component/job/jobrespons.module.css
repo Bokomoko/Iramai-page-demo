@@ -1,0 +1,39 @@
+.jobrespons h2 {
+  text-align: left;
+  font: medium 28px/37px Gordita;
+  letter-spacing: 0px;
+  color: #212121;
+}
+.jobrespons li {
+  font: normal 16px/32px Gordita;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #444444;
+  opacity: 1;
+}
+
+.cv_description {
+  margin-bottom: 80px;
+}
+
+.cv_description .title {
+  text-align: left;
+  font-size: 1.75rem;
+  line-height: 2.375rem;
+  letter-spacing: 0px;
+  color: #212121;
+  margin-bottom: 2rem;
+}
+
+.cv_description .list {
+  padding-left: 20px;
+}
+
+.cv-description .list li {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 2rem;
+  letter-spacing: 0px;
+  color: #444444;
+  opacity: 1;
+}
