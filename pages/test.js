@@ -1,6 +1,6 @@
 // simple page to test new components
 
-// as of april 03 -> Responsabilities
+// as of april 04 -> New props on Cover component
 
 import React from 'react';
 import Cover from '../component/job/cover';
@@ -37,6 +37,7 @@ export default function Test() {
         cover_cta="Apply as React/Node Developer"
         cta_url="page for applying to job"
         image_cover="../../public/img/Hero image.png"
+        image_alt_text="a guy looking to a LED monitor"
       />
       <FancyList
         listTitle="Job responsibilities"
