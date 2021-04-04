@@ -3,7 +3,7 @@
 // as of april 03 -> Responsabilities
 
 import React from 'react';
-import JobRespons from '../component/job/jobrespons';
+import FancyList from '../component/job/fancylist';
 
 export default function Test() {
   const listOfResponsabilities = [
@@ -19,5 +19,25 @@ export default function Test() {
     'Experience in Unix/Linux environments, including basic commands and scripting',
   ];
 
-  return <JobRespons responsList={listOfResponsabilities} />;
+  const listOfRequirements = [
+    'Bachelor´s/Master´s degree in Computer Science (or equivalent experience)',
+    '3+ years of experience in web development(we make rare exceptions if you are highly skilled)',
+    'Proficiency in React.js, Node.js, JavaScriipt, HTML and CSS',
+    'Experience with REST APIs and third-party libraries',
+    'Fluency in English and the communications skills of effortlessly collaborate with engineering managers at US software companies',
+    'The ability to work full-time (40 hours/week0 concurrently with US time zones for a minimum of 4 hous/day',
+  ];
+
+  return (
+    <>
+      <FancyList
+        listTitle="Job responsabilities"
+        listItems={listOfResponsabilities}
+      />
+      <FancyList
+        listTitle="Minimum requirements"
+        listItems={listOfRequirements}
+      />
+    </>
+  );
 }
