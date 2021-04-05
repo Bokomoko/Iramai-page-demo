@@ -5,6 +5,7 @@
 import React from 'react';
 import Cover from '../component/job/cover';
 import FancyList from '../component/job/fancylist';
+import styled from 'styled-components';
 
 export default function Test() {
   const listOfResponsibilities = [
@@ -29,6 +30,18 @@ export default function Test() {
     'The ability to work full-time (40 hours/week0 concurrently with US time zones for a minimum of 4 hous/day',
   ];
 
+  const ThreeColumns = styled.div`
+    display: flex;
+    width: 100%;
+  `;
+
+  const CenterColumn = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px;
+    width: 30%;
+  `;
+
   return (
     <>
       <Cover
@@ -39,14 +52,18 @@ export default function Test() {
         image_cover="../../public/img/Hero image.png"
         image_alt_text="a guy looking to a LED monitor"
       />
-      <FancyList
-        listTitle="Job responsibilities"
-        listItems={listOfResponsibilities}
-      />
-      <FancyList
-        listTitle="Minimum requirements"
-        listItems={listOfRequirements}
-      />
+      <ThreeColumns>
+        <CenterColumn>
+          <FancyList
+            listTitle="Job responsibilities"
+            listItems={listOfResponsibilities}
+          />
+          <FancyList
+            listTitle="Minimum requirements"
+            listItems={listOfRequirements}
+          />
+        </CenterColumn>
+      </ThreeColumns>
     </>
   );
 }
