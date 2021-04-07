@@ -13,10 +13,10 @@ function Header() {
                     </div>
                     <div className={styles.right}>
                         <div className={className(styles.nav_item_container, styles.nav_item, styles.hover_1)}>
-                            <span className={className(styles.nav_item_container, styles.nav_item)}>Jobs</span>
+                            <span className={className(styles.nav_item_container, styles.nav_item)}>For Companies</span>
                         </div>
                         <div className={className(styles.nav_item_container, styles.nav_item, styles.hover_1)}>
-                            <span className={className(styles.nav_item_container, styles.nav_item)}>FAQs</span>
+                            <span className={className(styles.nav_item_container, styles.nav_item)}>For Developers</span>
                         </div>
                         <div className={className(styles.nav_item_container, styles.nav_item, styles.hover_1)}>
                             <span className={className(styles.nav_item_container, styles.nav_item)}>Blog</span>
