@@ -42,11 +42,11 @@ function HomeScreen() {
                                  alt=""/>
                         </div>
                     </div>
-                    {/*<div className="row">*/}
-                    {/*    <div className={styles.company_info}>*/}
-                    {/*        <Company/>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
+                    <div className="row">
+                        <div className={styles.company_info}>
+                            <Company/>
+                        </div>
+                    </div>
                     <div className="row">
                         <div className={classNames("container", styles.turing_offers)}>
                             <h2 className={styles.txt_lg}>What Turing offers</h2>
@@ -165,7 +165,6 @@ function HomeScreen() {
                             </div>
                         </div>
                     </div>
-
                     <div className="row">
                         <div className={classNames("container", styles.talent)}>
                             <div className={styles.talent_img}>
@@ -185,7 +184,14 @@ function HomeScreen() {
                         </div>
                     </div>
                     <div className="row">
-
+                        <div className={classNames("container", styles.partner)}>
+                            <div>
+                                As remote work continues to solidify its place as a critical aspect of how businesses exist these days, a startup...
+                            </div>
+                            <div>
+                                <img src="/"/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
