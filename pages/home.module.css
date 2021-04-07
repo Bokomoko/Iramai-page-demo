@@ -149,13 +149,18 @@
 }
 
 @media screen and (max-width: 768px) {
-    .intro .container .right {
+    .container .right {
         width: 100%;
         -webkit-box-ordinal-group: 2;
         -webkit-order: 1;
         -moz-box-ordinal-group: 2;
         -ms-flex-order: 1;
         order: 1;
+    }
+    .intro {
+        height: 100vh;
+        min-height: 800px;
+        padding-top: 60px;
     }
     .txt_lg {
         font-family: "Gordita";
@@ -468,6 +473,9 @@
         display: flex;
         flex-direction: column;
         padding: 0px;
+    }
+    .turing_offers {
+        padding-top: 50px;
     }
 
     .turing_demo_title  {

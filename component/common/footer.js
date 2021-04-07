@@ -19,85 +19,63 @@ function Footer() {
             </div>
             <div className={styles.footerWrapper}>
                 <div className="container">
-                    <div className="row">
-                        <div className="col-lg-4 col-sm-12">
+                    <div className={styles.footer_info}>
+                        <div className={styles.col}>
                             <span className={styles.text_bold}>Turing</span>
                         </div>
-                        <div className="col-lg-8 col-sm-12">
-                            <div className="row">
-                                <div className="col-lg-3 col-md-3 col-sm-6">
-                                    <ul>
-                                        <li className={styles.text_bold}>About</li>
-                                        <li><Link href="/#"><a className={styles.text_thin}>For Companies</a></Link>
-                                        </li>
-                                        <li><Link href="/#"><a className={styles.text_thin}>For
-                                            Developers</a></Link></li>
-                                    </ul>
-                                </div>
-                                <div className="col-lg-3 col-md-3 col-sm-6">
-                                    <ul>
-                                        <li className={styles.text_bold}>Company</li>
-                                        <li><Link href="/#"><a className={styles.text_thin}>Careers</a></Link></li>
-                                        <li><Link href="/#"><a className={styles.text_thin}>Press</a></Link></li>
-                                    </ul>
-                                </div>
-                                <div className="col-lg-3 col-md-3 col-sm-6">
-                                    <ul>
-                                        <li className={styles.text_bold}>Resources</li>
-                                        <li><Link href="/#"><a className={styles.text_thin}>Blog</a></Link></li>
-                                        <li><Link href="/#"><a className={styles.text_thin}>FAQs</a></Link></li>
-                                    </ul>
-                                </div>
-                                <div className="col-lg-3 col-md-3 col-sm-6">
-                                    <ul>
-                                        <li className={styles.text_bold}>Social</li>
-                                        <li><a className={styles.text_thin}
-                                               href="https://www.facebook.com/turingcom/"
-                                               target="_blank" rel="">Facebook</a></li>
-                                        <li>
-                                            <a className={styles.text_thin}
-                                               href="https://www.linkedin.com/company/turingcom/"
-                                               target="_blank" rel="">Linkedin</a>
-                                        </li>
-                                        <li>
-                                            <a className={styles.text_thin}
-                                               href="https://www.instagram.com/turingcom/"
-                                               target="_blank" rel="">Instagram</a>
-                                        </li>
-                                        <li>
-                                            <a className={styles.text_thin} href="https://twitter.com/turingcom"
-                                               target="_blank"
-                                               rel="">Twitter</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div className={styles.link}>
+                            <ul className={styles.sm}>
+                                <li className={styles.text_bold}>About</li>
+                                <li>
+                                    <Link href="/#"><a className={styles.text_thin}>For Companies</a></Link>
+                                </li>
+                                <li>
+                                    <Link href="/#"><a className={styles.text_thin}>For Developers</a></Link>
+                                </li>
+                            </ul>
+                            <ul className={styles.sm}>
+                                <li className={styles.text_bold}>Company</li>
+                                <li><Link href="/#"><a className={styles.text_thin}>Careers</a></Link></li>
+                                <li><Link href="/#"><a className={styles.text_thin}>Press</a></Link></li>
+                            </ul>
+                        </div>
+                        <div className={styles.link}>
+                            <ul className={styles.sm}>
+                                <li className={styles.text_bold}>Resources</li>
+                                <li><Link href="/#"><a className={styles.text_thin}>Blog</a></Link></li>
+                                <li><Link href="/#"><a className={styles.text_thin}>FAQs</a></Link></li>
+                            </ul>
+                            <ul className={styles.sm}>
+                                <li className={styles.text_bold}>Social</li>
+                                <li><a className={styles.text_thin}
+                                       href="https://www.facebook.com/turingcom/"
+                                       target="_blank" rel="">Facebook</a></li>
+                                <li>
+                                    <a className={styles.text_thin}
+                                       href="https://www.linkedin.com/company/turingcom/"
+                                       target="_blank" rel="">Linkedin</a>
+                                </li>
+                                <li>
+                                    <a className={styles.text_thin}
+                                       href="https://www.instagram.com/turingcom/"
+                                       target="_blank" rel="">Instagram</a>
+                                </li>
+                                <li>
+                                    <a className={styles.text_thin} href="https://twitter.com/turingcom"
+                                       target="_blank"
+                                       rel="">Twitter</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-
-                    <div className="row">
-                        <div className="col-lg-4 col-sm-12">
+                    <div className={styles.footer_info}>
+                        <div className={styles.col}>
                             <span className={styles.text_thin}>©2021 Turing</span><br/>
                             <span className={styles.text_thin}>1900 Embarcadero Road Palo Alto, CA, 94303</span>
                         </div>
-                        <div className="col-lg-8 col-sm-12">
-                            <ul>
-                                <li className={styles.text_thin}/>
-                                <li className={styles.text_thin}>
-                                    <div className={styles.right}>
-                                        <div>
-                                            <a className={styles.text_thin} href="https://twitter.com/turingcom"
-                                               target="_blank"
-                                               rel="">Twitter</a>
-                                        </div>
-                                        <div>
-                                            <a className={styles.text_thin} href="https://twitter.com/turingcom"
-                                               target="_blank"
-                                               rel="">Privacy Policy</a>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div className={styles.link}>
+                            <span className={styles.text_thin}>Terms of Service</span><br/>
+                            <span className={styles.text_thin}>Privacy Policy</span>
                         </div>
                     </div>
                 </div>

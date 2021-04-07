@@ -42,8 +42,16 @@
         position: relative;
         width: 100px;
     }
+    .img {
+        width: 20%;
+        height: 36px;
+        margin: 5px;
+    }
     .company_icon {
-        width: 360px;
-        height: 53px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: auto;
+        visibility: visible;
     }
 }
