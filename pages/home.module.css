@@ -1,5 +1,6 @@
 .intro {
     width: 100%;
+    height: auto;
 }
 
 .container {
@@ -102,7 +103,7 @@
 
 @media screen and (min-width: 769px) {
     .intro {
-        height: 100vh;
+        height: auto;
         min-height: 800px;
         padding-top: 60px;
     }
@@ -124,7 +125,6 @@
 
 @media screen and (min-width: 769px) {
     .intro .container .right {
-        position: absolute;
         width: calc(720 / 1070 * 100%);
         height: 56vh;
         z-index: 1;
@@ -158,13 +158,14 @@
         order: 1;
     }
     .intro {
-        height: 100vh;
+        height: auto;
         min-height: 800px;
         padding-top: 60px;
     }
     .txt_lg {
         font-family: "Gordita";
         font-size: 34px;
+        line-height: 30px;
     }
     .txt_sm {
         font-family: "Gordita";
@@ -176,9 +177,11 @@
         height: 286px;
         margin-left: 48px;
     }
-
     .company_info {
         margin-top: 20px;
+    }
+    .txt_sm_pm {
+        padding-top: 10px;
     }
 
 }
@@ -424,7 +427,7 @@
 .talent {
     display: flex;
     flex-direction: row;
-    padding: 100px 0px;
+    padding: 100px 0;
 }
 
 .talent_title {
@@ -459,6 +462,7 @@
     .offer_content {
         display: flex;
         flex-direction: column;
+        margin-left: 0;
     }
     .turing_demo {
         display: flex;
@@ -472,7 +476,7 @@
     .talent  {
         display: flex;
         flex-direction: column;
-        padding: 0px;
+        padding: 50px 0px 0px;
     }
     .turing_offers {
         padding-top: 50px;
@@ -527,10 +531,6 @@
 }
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
-    .section {
-        padding-left: calc(20px + 20 * (100vw - 320px) / 448);
-        padding-right: calc(20px + 20 * (100vw - 320px) / 448);
-    }
     .offer_content .talent .turing_demo {
         display: flex;
         flex-direction: column;
@@ -555,9 +555,6 @@
 
     .turing_demo_title .turing_demo_developer .talent_title .talent_img .turing_demo_developer {
         width: 100%;
-    }
-    .job_label {
-        margin-top: -20px;
     }
 }
 

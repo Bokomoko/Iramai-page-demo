@@ -69,13 +69,15 @@ function Footer() {
                         </div>
                     </div>
                     <div className={styles.footer_info}>
-                        <div className={styles.col}>
-                            <span className={styles.text_thin}>©2021 Turing</span><br/>
-                            <span className={styles.text_thin}>1900 Embarcadero Road Palo Alto, CA, 94303</span>
+                        <div className={styles.sm}>
+                            <span className={styles.text_small}>©2021 Turing</span><br/>
+                            <span className={styles.text_small}>1900 Embarcadero Road Palo Alto, CA, 94303</span>
                         </div>
                         <div className={styles.link}>
-                            <span className={styles.text_thin}>Terms of Service</span><br/>
-                            <span className={styles.text_thin}>Privacy Policy</span>
+                            <ul className={styles.sm}>
+                                <li><span className={styles.text_small}>Terms of Service</span></li>
+                                <li><span className={styles.text_small}>Privacy Policy</span></li>
+                            </ul>
                         </div>
                     </div>
                 </div>

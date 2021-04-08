@@ -54,6 +54,7 @@
     left: 0;
     right: 0;
     bottom: 0;
+    margin-bottom: 10px;
 }
 
 .footer .copyright {
@@ -126,6 +127,7 @@
 .link {
     width: 60%;
     display: flex;
+    padding-top: 40px;
 }
 
 @media screen and (min-width: 1680px) {
@@ -428,6 +430,13 @@
     opacity: 1;
 }
 
+.text_small {
+    color: #AAAAAA !important;
+    margin: 16px 0;
+    font-size: 14px;
+    font-family: "Gordita";
+}
+
 .text_bold {
     text-align: left;
     letter-spacing: 0px;
@@ -504,5 +513,8 @@
         font-family: "Gordita";
         color: #AAAAAA !important;
         opacity: 1;
+    }
+    .text_small {
+        font-size: 12px;
     }
 }
