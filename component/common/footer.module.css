@@ -87,6 +87,10 @@
     text-align: center;
 }
 
+.col_footer {
+    width: 50%;
+}
+
 .text_sm {
     text-align: center;
     font-family: "Gordita";
@@ -353,6 +357,9 @@
         font-size: 16px;
         margin-bottom: 38px;
     }
+    .col_mobile {
+        margin-left: -40px;
+    }
 }
 
 .footerLinks ul li a {
@@ -509,7 +516,7 @@
         flex-direction: column;
     }
     .text_thin {
-        font-size: 14px;
+        font-size: 12px;
         font-family: "Gordita";
         color: #AAAAAA !important;
         opacity: 1;

@@ -1,10 +1,7 @@
-
-.root {
-    width: 60%;
-    margin: 0 auto;
+.intro {
+    width: 100%;
+    height: auto;
 }
-
-/* TYPOGRAPHY */
 
 .title_1 {
     font-family: Gordita;
@@ -82,16 +79,21 @@
     flex-shrink: 0;
 }
 
+.top {
+    padding-top: 150px;
+}
+
 .section1 {
     position: relative;
     height: 100%;
     width: 100%;
     display: block;
-    padding: 70px 0 0 0;
-}
+    padding: 30px 0 0 0;
+ }
+
 .section2 {
     margin-top: 30px;
-    padding-bottom: 150px;
+    padding-bottom: 70px;
 }
 
 /* banner */
@@ -126,7 +128,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
     align-items: stretch;
     align-content: stretch;
 }
@@ -550,14 +551,46 @@
     margin: 30px 0;
 }
 
+@media screen and (min-width: 769px) {
+    .intro {
+        height: auto;
+        min-height: 800px;
+        padding-top: 60px;
+    }
+    .top {
+        padding-top: 35px;
+    }
+    .holder {
+        align-items: center;
+        display: block;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    .top {
+        padding-top: 35px;
+    }
+    .intro {
+        height: auto;
+        min-height: 800px;
+        padding-top: 60px;
+    }
+    .holder {
+        align-items: center;
+        display: block;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+
 
     .signup-column {
         display: none;
     }
 
     .root, .header, .dev-popup {
-        width: 90% !important;
+        width: 100% !important;
     }
 
     .header {
@@ -584,10 +617,6 @@
         display: flex;
         flex-grow: 1;
         flex-shrink: 0;
-    }
-
-    .section1 {
-        margin-top: 80px;
     }
 
     .banner.left .p.txt-1 {

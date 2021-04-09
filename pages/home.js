@@ -186,8 +186,9 @@ function HomeScreen() {
                     <div className="row">
                         <div className={classNames("container", styles.partner)}>
                             <div>
-                                As remote work continues to solidify its place as a critical aspect of how businesses exist these days, a startup...
+                                "As remote work continues to solidify its place as a critical aspect of how businesses exist these days, a startup..."
                             </div>
+                            <Link href="#">Read article</Link>
                             <div>
                                 <img src="/"/>
                             </div>

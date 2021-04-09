@@ -30,7 +30,7 @@ function Footer() {
                                     <Link href="/#"><a className={styles.text_thin}>For Companies</a></Link>
                                 </li>
                                 <li>
-                                    <Link href="/#"><a className={styles.text_thin}>For Developers</a></Link>
+                                    <a className={styles.text_thin} href="https://developer.turing.com" target="_blank">For Developers</a>
                                 </li>
                             </ul>
                             <ul className={styles.sm}>
@@ -43,7 +43,7 @@ function Footer() {
                             <ul className={styles.sm}>
                                 <li className={styles.text_bold}>Resources</li>
                                 <li><Link href="/#"><a className={styles.text_thin}>Blog</a></Link></li>
-                                <li><Link href="/#"><a className={styles.text_thin}>FAQs</a></Link></li>
+                                <li><Link href="/faq"><a className={styles.text_thin}>FAQs</a></Link></li>
                             </ul>
                             <ul className={styles.sm}>
                                 <li className={styles.text_bold}>Social</li>
@@ -69,14 +69,14 @@ function Footer() {
                         </div>
                     </div>
                     <div className={styles.footer_info}>
-                        <div className={styles.sm}>
+                        <div className={classNames(styles.sm, styles.col_footer)}>
                             <span className={styles.text_small}>©2021 Turing</span><br/>
                             <span className={styles.text_small}>1900 Embarcadero Road Palo Alto, CA, 94303</span>
                         </div>
-                        <div className={styles.link}>
-                            <ul className={styles.sm}>
-                                <li><span className={styles.text_small}>Terms of Service</span></li>
-                                <li><span className={styles.text_small}>Privacy Policy</span></li>
+                        <div className={classNames(styles.sm, styles.col_footer, styles.col_mobile)}>
+                            <ul>
+                                <li><Link href="/policy"><a className={styles.text_thin}>Terms of Service</a></Link></li>
+                                <li><Link href="/policy"><a className={styles.text_thin}>Privacy Policy</a></Link></li>
                             </ul>
                         </div>
                     </div>
