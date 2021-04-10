@@ -70,19 +70,26 @@ export default function TuringTxtCarousel(props) {
   return (
     <div>
       <style>
-        {`.itemslide {
+        {`
+          .itemslide {
+            padding-top : 60px;
+            padding-left : 20px;
+            padding-right : 20px;
             margin-left: 20px;
             margin-right: 20px;
             width: auto;
             color : black;
             height: 200px;
-            background: grey;
+            background: white;
           }
+          
           .carouselbox {
             text-align : center;
             margin : auto;
             width : 30%;
-          }`}
+          }
+
+        `}
       </style>
       <Carousel
         className="carouselbox"
@@ -97,11 +104,13 @@ export default function TuringTxtCarousel(props) {
         />
         {slides}
         <CarouselControl
+          className="leftarrow"
           direction="prev"
           directionText="Previous"
           onClickHandler={previous}
         />
         <CarouselControl
+          className="righarrow"
           direction="next"
           directionText="Next"
           onClickHandler={next}
