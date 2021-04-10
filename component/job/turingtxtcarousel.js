@@ -73,8 +73,8 @@ export default function TuringTxtCarousel(props) {
         {`
           .itemslide {
             padding-top : 60px;
-            padding-left : 20px;
-            padding-right : 20px;
+            padding-left : 40px;
+            padding-right : 40px;
             margin-left: 20px;
             margin-right: 20px;
             width: auto;
@@ -82,11 +82,19 @@ export default function TuringTxtCarousel(props) {
             height: 200px;
             background: white;
           }
-          
+
           .carouselbox {
             text-align : center;
             margin : auto;
-            width : 30%;
+            width : 33%;
+          }
+
+          .arrows {
+            margin-top : 60px;
+            width: 10%;
+            height : 60px;
+            color : yellow;
+            background-color : grey;
           }
 
         `}
@@ -97,20 +105,15 @@ export default function TuringTxtCarousel(props) {
         next={next}
         previous={previous}
       >
-        <CarouselIndicators
-          items={listOfArticles}
-          activeIndex={activeIndex}
-          onClickHandler={goToIndex}
-        />
         {slides}
         <CarouselControl
-          className="leftarrow"
+          className="arrows"
           direction="prev"
           directionText="Previous"
           onClickHandler={previous}
         />
         <CarouselControl
-          className="righarrow"
+          className="arrows"
           direction="next"
           directionText="Next"
           onClickHandler={next}
