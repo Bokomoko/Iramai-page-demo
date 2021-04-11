@@ -123,6 +123,10 @@
     text-decoration: none !important;
 }
 
+.padding_btn {
+    padding-top: 30px;
+}
+
 .partner {
     display: flex;
     flex-direction: column;
@@ -218,6 +222,9 @@
     }
     .txt_sm_pm {
         padding-top: 10px;
+    }
+    .padding_btn {
+        padding-top: 20px;
     }
 
 }
