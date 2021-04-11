@@ -422,7 +422,6 @@
     padding-left: 16px;
     padding-right: 16px;
     width: 160px;
-    height: 160px;
 }
 
 .dev_recommendation {
@@ -488,6 +487,10 @@
 .talent_img_content {
     width: 601px;
     height: 496px;
+}
+
+.order_img {
+    padding-top: 150px;
 }
 
 @media screen and (max-width: 768px) {
