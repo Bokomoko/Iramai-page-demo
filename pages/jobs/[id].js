@@ -1,5 +1,5 @@
 import Layout from '../../component/layout';
-import { getJobData, getAllJobs } from './job_data';
+import { getJobData, getAllJobs } from '../../service/jobs/job_data';
 import ReactMarkdown from "react-markdown";
 
 function Jobs({ jobData }) {

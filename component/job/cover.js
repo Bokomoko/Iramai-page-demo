@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
 
-export default function Cover(props) {
+function Cover(props) {
   const { cover_title, description, cover_cta, cta_url } = props;
 
   return (
@@ -18,3 +18,5 @@ export default function Cover(props) {
     </div>
   );
 }
+
+export default Cover
