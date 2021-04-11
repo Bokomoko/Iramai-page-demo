@@ -14,7 +14,7 @@ function Footer() {
                     <span>Hire and manage remote developers</span>
                 </div>
                 <div className={styles.text_sm}>
-                    <button className={classNames('btn', styles.btn_primary)}>Hire developers</button>
+                    <a href="/hire" className={classNames('btn', styles.btn_primary)}>Hire developers</a>
                 </div>
             </div>
             <div className={styles.footerWrapper}>

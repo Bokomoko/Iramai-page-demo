@@ -78,13 +78,49 @@
     background: #2E6EDF 0 0 no-repeat padding-box;
     border-radius: 6px;
     opacity: 1;
-    height: 48px;
-    width: 184px;
     color: #ffffff;
-    font-family: "Gordita";
-    text-align: center;
-    margin: 24px 0;
+    height: 48px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 25px;
+    transition: all 0.5s;
+    position: relative;
+    text-decoration: none;
+    width: 184px;
     border-color: transparent !important;
+}
+
+.btn::after {
+    font-family: "Gordita";
+    content: "\f061";
+    position: absolute;
+    left: 93%;
+    top: 31%;
+    right: 5%;
+    bottom: 0;
+    opacity: 0;
+}
+
+.link {
+    font-family: "Gordita";
+    text-decoration: none !important;
+    color: #ffffff;
+}
+
+.btn:hover {
+    background: #2E6EDF 0 0 no-repeat padding-box;
+    transition: all 0.5s;
+    height: 52px;
+    width: 208px;
+    border-radius: 6px;
+    color: #ffffff;
+    padding: 14px 34px 14px 24px;
+}
+
+.btn:hover::after {
+    opacity: 1;
+    transition: all 0.5s;
+    text-decoration: none !important;
 }
 
 .partner {

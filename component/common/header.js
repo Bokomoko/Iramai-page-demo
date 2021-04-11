@@ -23,7 +23,7 @@ function Header() {
                         </div>
                     </div>
                     <div className={styles.right1}>
-                        <a href="#" className={className('navbar-text', 'pr-3', styles.text_default)}>Hire
+                        <a href="/hire" className={className('navbar-text', 'pr-3', styles.text_default)}>Hire
                             developers</a>
                         <button className={className('btn', styles.btn_primary)} type="button">Apply now</button>
                     </div>

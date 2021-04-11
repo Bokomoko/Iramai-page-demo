@@ -112,7 +112,7 @@ function HomePage() {
                                   good fit for your team.
                               </div>
 
-                              <button className={classNames(styles.btn)}>Hire developers</button>
+                              <a href="/hire" className={classNames(styles.btn, styles.link)}>Hire developers</a>
                           </div>
                           <div className={styles.turing_demo_developer}>
                               <div>Turing</div>
@@ -158,7 +158,7 @@ function HomePage() {
                               <div className={classNames(styles.txt_sm)}>
                                   Sourced by software, vetted by software and managed by software.
                               </div>
-                              <button className={classNames(styles.btn)}>Hire developers</button>
+                              <a href="/hire" className={classNames(styles.btn, styles.link)}>Hire developers</a>
                           </div>
                           <div className={styles.talent_img}>
                               <img className={styles.talent_img_content} src="/icons/dev_desk.svg"/>
@@ -179,7 +179,7 @@ function HomePage() {
                                   your office. Go #Boundaryless with us and hire across tech roles, skills, and
                                   seniority with the push of a button.
                               </div>
-                              <button className={classNames(styles.btn)}>Hire developers</button>
+                              <a href="/hire" className={classNames(styles.btn, styles.link)}>Hire developers</a>
                           </div>
                       </div>
                   </div>
