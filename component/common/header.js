@@ -13,17 +13,17 @@ function Header() {
                     </div>
                     <div className={styles.right}>
                         <div className={className(styles.nav_item_container, styles.nav_item, styles.hover_1)}>
-                            <span className={className(styles.nav_item_container, styles.nav_item)}>Jobs</span>
+                            <span className={className(styles.nav_item_container, styles.nav_item)}>For Companies</span>
                         </div>
                         <div className={className(styles.nav_item_container, styles.nav_item, styles.hover_1)}>
-                            <span className={className(styles.nav_item_container, styles.nav_item)}>FAQs</span>
+                            <span className={className(styles.nav_item_container, styles.nav_item)}>For Developers</span>
                         </div>
                         <div className={className(styles.nav_item_container, styles.nav_item, styles.hover_1)}>
                             <span className={className(styles.nav_item_container, styles.nav_item)}>Blog</span>
                         </div>
                     </div>
                     <div className={styles.right1}>
-                        <a href="#" className={className('navbar-text', 'pr-3', styles.text_default)}>Hire
+                        <a href="/hire" className={className('navbar-text', 'pr-3', styles.text_default)}>Hire
                             developers</a>
                         <button className={className('btn', styles.btn_primary)} type="button">Apply now</button>
                     </div>
