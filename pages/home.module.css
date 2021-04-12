@@ -28,10 +28,22 @@
 
 .txt_sm {
     font-family: "Gordita";
-    font-size: 16px;
+    font-size: 14px;
     line-height: 30px;
     color: #444444;
     opacity: 1;
+}
+
+.job_full_time {
+    width: 100%;
+    padding-left: 120px;
+    line-height: 24px;
+}
+
+.dev_skills {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .offer_label {
@@ -130,6 +142,9 @@
 
 .padding_btn {
     padding-top: 30px;
+}
+.padding_8 {
+    padding: 8px;
 }
 
 .partner {
@@ -447,13 +462,20 @@
 .turing_demo_developer_profile {
     display: flex;
     flex-direction: column;
-    padding-top: 10px;
+    padding-top: 40px;
 }
 
 .line {
     width: 100%;
     border: 1px solid #EEEEEE;
     opacity: 1;
+}
+
+.skills {
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
 }
 
 .introduce {
@@ -473,6 +495,8 @@
 .job_time {
     display: flex;
     flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .talent {
@@ -503,9 +527,30 @@
 }
 
 .header {
-    padding: 12px;
+    padding-top: 32px;
+    padding-right: 28px;
+    padding-left: 40px;
     display: flex;
     flex-direction: row;
+}
+
+.site {
+    width: 55%;
+}
+.icons {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 45%;
+    position: relative;
+    padding-top: 8px;
+}
+.icon_bg {
+    color: #888888!important;
+    width: 24px;
+}
+
+.icon_cal {
+    padding-left: 40px;
 }
 
 .dev_name {
@@ -545,6 +590,7 @@
     }
     .turing_offers {
         padding-top: 50px;
+        margin-bottom: 5vh;
     }
 
     .turing_demo_title  {
@@ -568,6 +614,7 @@
         width: 100%;
         padding-left: 20px;
         padding-right: 20px;
+        margin-top: 50px;
     }
 
     .talent_img_content {
@@ -592,7 +639,17 @@
     }
     .order_img {
         order: 2;
+        padding-top: 20px
     }
+
+    .header {
+        padding-top: 16px;
+        padding-right: 10px;
+        padding-left: 16px;
+        display: flex;
+        flex-direction: row;
+    }
+
 }
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
