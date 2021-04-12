@@ -5,13 +5,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import SideNav from "./sidenav";
 
 function Header() {
+
+    function openMenu () {
+        alert('Open close')
+    }
+
     return (
         <header className={styles.header}>
             <div className={styles.container}>
                 <div className={styles.container_inner}>
                     <div className={styles.left}>
                         <h1 className={className(styles.h1, styles.menu_label)}>Turing</h1>
-                        <button className={className(styles.menu)}>
+                        <button className={className(styles.menu)} onClick={() => openMenu()}>
                             <i className="fas fa-bars"/>
                         </button>
                     </div>
@@ -34,7 +39,7 @@ function Header() {
                     </div>
                 </div>
             </div>
-            <SideNav/>
+            {/*<SideNav/>*/}
         </header>
     )
 }

@@ -36,7 +36,7 @@ function FaqPage() {
                                 of engineers in the world. And yes, we also use this hiring process for our own
                                 engineers ;)</p>
                         </div>
-                        <section className={styles.section}>
+                        <section className={styles.section1}>
                             <div className={styles.holder}>
                                 <div className={styles.grid}>
                                     <div className="column animated fadeInUp animElem-6">
@@ -55,7 +55,7 @@ function FaqPage() {
                             </div>
                         </section>
 
-                        <section className={styles.section}>
+                        <section className={styles.section1}>
                             <div className={styles.holder}>
                                 <div className={styles.grid}>
                                     <div className="column animated fadeInUp animElem-6">
@@ -72,7 +72,7 @@ function FaqPage() {
                             </div>
                         </section>
 
-                        <section className={styles.section}>
+                        <section className={styles.section1}>
                             <div className={styles.holder}>
                                 <div className={styles.grid}>
                                     <div className="column animated fadeInUp animElem-6">

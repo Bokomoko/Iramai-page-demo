@@ -1,17 +1,23 @@
 import styles from "./sidenav.module.css";
-import React from "react";
+import React, {useEffect, useState} from "react";
 import className from "classnames";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Link from "next/link";
 
-function SideNav() {
+function SideNav(props) {
+    const [isOpen, setOpen] = useState();
+
+    function closeMenu() {
+        alert('close')
+    }
+
     return (
         <div className={styles.sidenav}>
             <div className={styles.menu}>
                 <div className={styles.menu_container}>
                     <div className={styles.menu_header}>
                         <h1 className={className(styles.h1, styles.label)}>Turing</h1>
-                        <button className={className(styles.close)}>
+                        <button className={className(styles.close)} onClick={()=> closeMenu()}>
                             <i className="fas fa-times"/>
                         </button>
                     </div>
