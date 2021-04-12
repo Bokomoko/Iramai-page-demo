@@ -1,8 +1,14 @@
-import { ApolloClient, createHttpLink, InMemoryCache, gql } from '@apollo/client'
-import { setContext } from '@apollo/client/link/context'
+import {
+  ApolloClient,
+  createHttpLink,
+  InMemoryCache,
+  gql,
+} from '@apollo/client';
+
+import { setContext } from '@apollo/client/link/context';
 
 const httpLink = createHttpLink({
-  uri: process.env.STAGING_URL
+  uri: process.env.STAGING_URL,
 });
 
 const authLink = setContext((_, { headers }) => {
@@ -12,27 +18,34 @@ const authLink = setContext((_, { headers }) => {
   return {
     headers: {
       ...headers,
-      Authorization: "Bearer " + token,
-    }
-  }
+      Authorization: 'Bearer ' + token,
+    },
+  };
 });
 
 const client = new ApolloClient({
   link: authLink.concat(httpLink),
-  cache: new InMemoryCache()
+  cache: new InMemoryCache(),
 });
 
 export async function getAllJobs() {
   const { data } = await client.query({
     query: gql`
       {
-        jobs {
-          url
+        query
+        Getjobs {
+          jobs {
+            id
+            description
+            cover_title
+            cover_image_url
+            url
+          }
         }
       }
-    `
+    `,
   });
-  return(data.jobs);
+  return data.jobs;
 }
 
 export async function getJobData(url) {
@@ -85,7 +98,7 @@ export async function getJobData(url) {
           }
         }
       }
-    `
+    `,
   });
   return data.jobs[0];
 }

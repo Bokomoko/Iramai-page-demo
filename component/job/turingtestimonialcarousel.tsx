@@ -76,6 +76,7 @@ export default function TuringTestimonialCarousel(props) {
             text-align : center;
             margin : auto;
             width : 80%;
+            max-width: 
           }
 
           .arrows {

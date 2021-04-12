@@ -69,7 +69,7 @@ export default function TuringTxtCarousel(props) {
           .carouselbox {
             text-align : center;
             margin : auto;
-            width : 33%;
+            width : 90%;
           }
 
           .arrows {

@@ -1,0 +1,48 @@
+.testimonialbox {
+  display: block;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 33%;
+  padding: 32px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background-color: black;
+}
+
+.testimonialcontent {
+  display: block;
+}
+.testimonialimg {
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.testimonialtext {
+  display: flex;
+  color: green;
+}
+
+.testimonialtext h2 {
+  font: medium 10px/32px Gordita;
+  letter-spacing: 0px;
+  margin-left: 20px;
+  opacity: 1;
+}
+
+.testimonialbox p {
+  text-align: center;
+  font: normal 16px/30px Gordita;
+  letter-spacing: 0px;
+  color: #666666;
+  opacity: 1;
+}
+
+.testimonialbox q {
+  text-align: left;
+  font: normal 14px/21px Gordita;
+  letter-spacing: 0px;
+  color: #666666;
+  opacity: 1;
+}
