@@ -1,5 +1,5 @@
 const builder = require("xmlbuilder");
-const { getAllJobs } = require("../jobs/job_data");
+// const { getAllJobs } = require("../jobs/job_data");
 const globby = require("globby");
 
 export default async (req, res) => {

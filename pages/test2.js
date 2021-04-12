@@ -9,7 +9,7 @@ import TuringTxtCarousel from '../component/job/turingtxtcarousel';
 
 import styled from 'styled-components';
 
-import { getAllJobs } from './jobs/job_data';
+// import { getAllJobs } from './jobs/job_data';
 
 export default function Test2() {
   const jobArticles = [

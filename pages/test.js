@@ -14,7 +14,7 @@ import TuringTestimonialCarousel from '../component/job/turingtestimonialcarouse
 import { Button } from 'react-bootstrap';
 import styles from './test.module.css';
 
-import { getAllJobs } from './jobs/job_data';
+// import { getAllJobs } from './jobs/job_data';
 
 export default function Test() {
   const listOfResponsibilities = [

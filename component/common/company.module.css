@@ -1,0 +1,57 @@
+.company {
+    position: relative;
+    width: 1205px;
+    top: 818px;
+}
+
+.company_icon {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    visibility: visible;
+}
+
+.txt_lg {
+    font-weight: 500;
+    font-family: Gordita;
+    font-size: 24px;
+    text-align: left;
+    color: #444444;
+}
+.txt_sm {
+    font-family: "Gordita";
+    font-size: 14px;
+    color: #444444;
+}
+.img {
+    width: 100%;
+    min-width: 110px;
+    height: 36px;
+    margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .txt_lg {
+        font-family: Gordita;
+        font-size: 20px;
+        text-align: left;
+        color: #444444;
+    }
+    .company {
+        position: relative;
+        width: 100px;
+    }
+    .img {
+        width: 20%;
+        height: 36px;
+        margin: 5px;
+    }
+    .company_icon {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: auto;
+        visibility: visible;
+    }
+}
