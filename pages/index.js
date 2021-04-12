@@ -118,7 +118,11 @@ function HomePage() {
                                 </div>
                             </div>
                             <div className={styles.turing_demo_developer}>
-                                <div>Turing</div>
+                                <div className={styles.header}>
+                                    <div className={classNames(styles.txt_sm, styles.txt_bold)}>Turing</div>
+                                    <i className="fa fa-share-alt" aria-hidden="true"></i>
+                                    <i className="fas fa-arrow-alt-to-bottom"></i>
+                                </div>
                                 <div className={styles.turing_demo_developer_profile}>
                                     <div className={styles.dev_main}>
                                         <img className={styles.dev_profile} src="/assets/developer.png"/>
