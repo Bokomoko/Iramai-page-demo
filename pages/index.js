@@ -3,10 +3,27 @@ import styles from "./home.module.css";
 import classNames from "classnames";
 import Link from "next/link";
 import Company from "../component/common/company";
-import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, {useState} from "react";
+import DeveloperProfiles from "../component/developer/DeveloperProfile";
 
 function HomePage() {
+    const developer = {
+        avatar: '/assets/developer.png',
+        name: 'Daniel Morales',
+        position: 'Fullstack Developer from Mexico',
+        recommendation: "As a full-stack developer, I have 6 years of experience in working on designing distributed systems, building web applications and backend APIs. Contributing to the team\'s success and grasping new concepts quickly are two of my biggest strengths. I am a critical thinker and a lover of people, who is eager to learn new things in life.",
+        work: "Full-time"
+    }
+    const {setDeveloper} = useState();
+
+    function shareInfo() {
+        alert('share info')
+    }
+
+    function downloadProfile() {
+        alert('download profile')
+    }
+
     return (
         <Layout>
             <div className={styles.intro}>
@@ -120,53 +137,13 @@ function HomePage() {
                                 </div>
                             </div>
                             <div className={styles.turing_demo_developer}>
-                                <div className={styles.header}>
-                                    <div className={styles.site}>
-                                        <div className={classNames(styles.txt_sm, styles.txt_bold)}>Turing</div>
-                                    </div>
-                                    <div className={styles.icons}>
-                                        <a href='#'><i className={classNames("fas fa-arrow-alt-circle-down", styles.icon_bg)} aria-hidden="true"></i></a>
-                                        <a href='#'><i className={classNames("fa fa-share-alt", styles.icon_bg)} aria-hidden="true"></i></a>
-
-                                    </div>
-
-                                </div>
-                                <div className={styles.turing_demo_developer_profile}>
-                                    <div className={styles.dev_main}>
-                                        <img className={styles.dev_profile} src="/assets/developer.png"/>
-                                        <div className={styles.dev_name}>
-                                            <div className={styles.txt_lg}>Daniel Morales</div>
-                                            <div className={classNames(styles.txt_sm, styles.job_label)}>
-                                                Fullstack Developer from Mexico
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className={styles.dev_recommendation}>
-                                        <div className={classNames(styles.txt_sm)}>
-                                            As a full-stack developer, I have 6 years of experience in working on
-                                            designing distributed systems, building web applications and backend
-                                            APIs.
-                                            Contributing to the team's success and grasping new concepts quickly are
-                                            two
-                                            of my biggest strengths. I am a critical thinker and a lover of people,
-                                            who
-                                            is eager to learn new things in life.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className={styles.line}/>
-                                <div className={styles.job_time}>
-                                    <i className={classNames("far fa-calendar-check", styles.icon_bg, styles.icon_cal)} aria-hidden="true">
-                                        <span className={styles.padding_8}>Availability</span></i>
-                                    <div className={classNames(styles.txt_sm, styles.job_full_time)}>Full-time</div>
-                                </div>
-                                <div className={styles.line}/>
-                                <div className={styles.skills}>
-                                    <i className={classNames("fas fa-check", styles.icon_bg, styles.icon_cal)}><span className={styles.padding_8}>Skills</span></i>
-                                    <div className={styles.dev_skills}>
-                                        <div className={classNames(styles.txt_sm, styles.job_full_time)}>This developer went through 4 to 6 hours of rigorous vetting in these areas:</div>
-                                    </div>
-                                </div>
+                                <DeveloperProfiles avatar={developer.avatar}
+                                                   name={developer.name}
+                                                   position={developer.position}
+                                                   recommendation={developer.recommendation}
+                                                   work={developer.work}
+                                                   downloadProfile={() => downloadProfile()}
+                                                   share={() => shareInfo()}/>
                             </div>
                         </div>
                     </div>

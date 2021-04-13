@@ -22,6 +22,10 @@ a {
     min-width: 414px;
 }
 
+.txt_bold {
+    font-weight: 700;
+}
+
 @font-face {
     font-family: "Ginto Nord";
     src: url('/fonts/Ginto-Nord-Regular.ttf') format('truetype');
