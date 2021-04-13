@@ -1,7 +1,4 @@
-import styles from './cover.module.css';
 import React, { ReactNode } from 'react';
-import classNames from 'classnames';
-import Container from 'react-bootstrap/Container';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
 
@@ -22,12 +19,17 @@ export default function Cover(props) {
     image_alt_text,
   } = props;
 
+  // to be used in future version allowing dynamic background image
+
   return (
-    <div className={styles.coverimage}>
-      <div className={styles.jobdesc}>
-        <h1>{cover_title}</h1>
-        <p>{description}</p>
-        <Button jobcta={cta_url}>{cover_cta}</Button>
+
+    <div>
+      <div className="coverimage">
+        <div className="jobdesc">
+          <h1>{cover_title}</h1>
+          <p>{description}</p>
+          <Button >{cover_cta}</Button>
+        </div>
       </div>
     </div>
   );
