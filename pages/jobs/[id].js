@@ -1,5 +1,5 @@
 import Layout from '../../component/layout';
-// import { getJobData, getAllJobs } from '../../service/jobs/job_data';
+import { getJobData, getAllJobs } from '../../service/jobs/job_data';
 import ReactMarkdown from 'react-markdown';
 
 function Jobs({ jobData }) {
@@ -39,7 +39,6 @@ export async function getStaticPaths() {
 // Fetch necessary data for the blog post using params.id
 export async function getStaticProps({ params }) {
   const jobData = await getJobData(params.id);
-
   return {
     props: {
       jobData,
