@@ -27,6 +27,11 @@
     margin-left: 10px;
 }
 
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
 .col1 {
     display: flex;
     width: 50%;
@@ -84,6 +89,34 @@
     width: 45%;
 }
 
+.partner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header {
+    text-align: left;
+    width: 100%;
+}
+
+.faq {
+    width: 90%;
+    padding-top: 50px;
+}
+
+.center {
+    width: 90%;
+    align-items: center;
+    text-align: center;
+}
+
+.padding_content {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
 .developer_box {
     background: #FCFCFC 0% 0% no-repeat padding-box;
     padding-top: 20px;
@@ -138,7 +171,6 @@
 }
 
 .txt_md {
-    text-align: left;
     font-family: "Gordita";
     font-weight: 300;
     font-size: 28px;
@@ -193,6 +225,16 @@
     text-align: center;
     font-size: 14px;
     font-family: Gordita;
+}
+
+.video {
+    width: 1208px;
+    height: 680px;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0.5;
+    background: #212121 0% 0% no-repeat padding-box;
+    border-radius: 8px;
 }
 
 .info {
