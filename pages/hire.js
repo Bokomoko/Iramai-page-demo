@@ -28,46 +28,48 @@ function HirePage() {
     return (
         <Layout>
             <div className={styles.intro}>
-                {/*<div className="row">*/}
-                {/*    <div className={classNames(styles.for_company, styles.introduce)}>*/}
-                {/*        <div className={classNames(styles.order_img, styles.recommendation)}>*/}
-                {/*            <div className="row">*/}
-                {/*                <div className={classNames("col-12")}>*/}
-                {/*                    <div className={styles.txt_lg}>*/}
-                {/*                        Tired of fighting with Silicon Valley giants to hire top software engineers?*/}
-                {/*                    </div>*/}
-                {/*                </div>*/}
-                {/*            </div>*/}
-                {/*            <div className="row">*/}
-                {/*                <div className={classNames("col-12")}>*/}
-                {/*                    <p className={classNames(styles.txt_sm, styles.txt_sm_pm)}>*/}
-                {/*                        Build your engineering team with pre-vetted remote developers in just a*/}
-                {/*                        matter*/}
-                {/*                        of days. Find highly-skilled remote engineers who are not only affordable*/}
-                {/*                        but*/}
-                {/*                        are willing to work in your timezone.*/}
-                {/*                    </p>*/}
-                {/*                </div>*/}
-                {/*            </div>*/}
-                {/*            <div className="row">*/}
-                {/*                <div className={classNames("col-12")}>*/}
-                {/*                    <div className={styles.padding_btn}>*/}
-                {/*                        <input type="text"/>*/}
-                {/*                        <a href="/hire" className={classNames(styles.btn, styles.link)}>Hire*/}
-                {/*                            developers</a>*/}
-                {/*                    </div>*/}
-                {/*                </div>*/}
-                {/*            </div>*/}
-                {/*            <div className="row">*/}
-                {/*                <div className={classNames("col-12", styles.padding_btn)}>*/}
-                {/*                    <span className={styles.txt_sm}>Looking for jobs instead?<Link href="#">Apply to jobs</Link></span>*/}
-                {/*                </div>*/}
-                {/*            </div>*/}
-                {/*        </div>*/}
-                {/*        <img className={classNames(styles.img)} src="/assets/hire.png"*/}
-                {/*             alt=""/>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
+                <div className="row">
+                    <div className={classNames(styles.for_company, styles.introduce)}>
+                        <div className={classNames(styles.order_img, styles.recommendation)}>
+                            <div className="row">
+                                <div className={classNames("col-12")}>
+                                    <div className={styles.txt_lg}>
+                                        Tired of fighting with Silicon Valley giants to hire top software engineers?
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className={classNames("col-12")}>
+                                    <p className={classNames(styles.txt_sm, styles.txt_sm_pm)}>
+                                        Build your engineering team with pre-vetted remote developers in just a
+                                        matter
+                                        of days. Find highly-skilled remote engineers who are not only affordable
+                                        but
+                                        are willing to work in your timezone.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className={classNames("col-12")}>
+                                    <div className={styles.padding_btn}>
+                                        <input type="text"/>
+                                        <a href="/hire" className={classNames(styles.btn, styles.link)}>Hire
+                                            developers</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className={classNames("col-12", styles.padding_btn)}>
+                                    <span className={styles.txt_sm}>Looking for jobs instead?<Link href="#">Apply to jobs</Link></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.img_mb}>
+                            <img className={classNames(styles.img)} src="/assets/hire.png"
+                                 alt=""/>
+                        </div>
+                    </div>
+                </div>
                 <div className="container">
                     <div className={classNames("row", styles.company_info)}>
                         <Company/>
@@ -215,6 +217,36 @@ function HirePage() {
                                                work={developer.work}
                                                downloadProfile={() => downloadProfile()}
                                                share={() => shareInfo()}/>
+                        </div>
+                    </div>
+                </div>
+                <div className="container">
+                    <div className={styles.hire_info}>
+                        <div className={classNames(styles.txt_md, "font-weight-light")}>How to hire top remote developers through Turing?</div>
+                        <div className={styles.info}>
+                            <div className={styles.info_col}>
+                                <div className={classNames(styles.circle)}>1</div>
+                                <p className={classNames(styles.txt_sm, "font-weight-light", "p-2")}>Tell us the skills you need</p>
+                                <p className={classNames(styles.txt_sm, "p-2")}>We’ll schedule a call and understand your requirements.</p>
+                            </div>
+                            <div className={styles.info_col}>
+                                <div className={classNames(styles.circle)}>2</div>
+                                <p className={classNames(styles.txt_sm, "font-weight-light", "p-2")}>Tell us the skills you need</p>
+                                <p className={classNames(styles.txt_sm, "p-2")}>We’ll schedule a call and understand your requirements.</p>
+                            </div>
+                            <div className={styles.info_col}>
+                                <div className={classNames(styles.circle)}>3</div>
+                                <p className={classNames(styles.txt_sm, "font-weight-light", "p-2")}>Tell us the skills you need</p>
+                                <p className={classNames(styles.txt_sm, "p-2")}>We’ll schedule a call and understand your requirements.</p>
+                            </div>
+                            <div className={styles.info_col}>
+                                <div className={classNames(styles.circle)}>4</div>
+                                <p className={classNames(styles.txt_sm, "font-weight-light", "p-2")}>Tell us the skills you need</p>
+                                <p className={classNames(styles.txt_sm, "p-2")}>We’ll schedule a call and understand your requirements.</p>
+                            </div>
+                        </div>
+                        <div className={styles.padding_btn}>
+                            <a href="/hire" className={classNames(styles.btn, styles.link)}>Hire developers</a>
                         </div>
                     </div>
                 </div>
