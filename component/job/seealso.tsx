@@ -1,11 +1,11 @@
 import React from 'react';
-interface SeeAlso {
+interface SeeAlsoData {
   jobTitle: string
   jobPage: string
 }
 
 interface listOfSeeAlso {
-  listOfSA: Array<SeeAlso>
+  listOfSA: Array<SeeAlsoData>
 }
 
 
@@ -18,7 +18,7 @@ export default function SeeAlso(props) {
       icon: `./icons/briefcaseicongreen.svg`
     },
     blue: {
-      background: "##56A8F70F",
+      background: "#56A8F70F",
       icon: `./icons/briefcaseiconblue.svg`
     },
     darkblue: {
@@ -27,64 +27,98 @@ export default function SeeAlso(props) {
     },
   }
   const setColor = colorsAvailable[color]
+  const colorClass = (`item${color}`)
   return (
     <div>
       <style>
         {`
         .checkalsobox {
-          max-width: 408px;
-          display:flex;
+          max-width: 308px;
+          display:block;
           height : auto;
-          padding : 10px;
-          flex-wrap : wrap;
           align-itens : baseline;
+          color: black;
         }
 
-        .checkalsothis {
+        .checkalsobox h5 {
+          margin-top:20px;
           text-align: left;
-          font: medium 16px/21px Gordita;
+          font: normal normal medium 16px/21px Gordita;
           letter-spacing: 0px;
-          color: #212121;
-          margin-botton : 24px
         }
 
-        .checkalsoitembox {
-          padding-left: 5px;
-          padding-top : 4px;
-          padding-right : 10px;
-          margin-left : 8px;
-          margin-top : 8px;
+        .itemlist {
+          display:flex;
+          width: 408px;
+          flex-wrap : wrap;
+          row-gap : 7px;
+          column-gap : 7px;
+
+        }
+
+        .itemgreen {
+          display: flex;
+          flex-wrap : nowrap;
           height : 32px;
-          background: ${setColor.background} 0% 0% no-repeat padding-box;
+          background: #41BFAD0F;
           border-radius: 50px;
           text-align: left;
           font: normal normal normal 14px/22px Gordita;
           letter-spacing: 0px;
-          border : 1px;
+          padding-left : 4px;
+          padding-right: 4px;
         }
-        .checkalsoitembox img {
+        .itemblue {
+          display: flex;
+          flex-wrap : nowrap;
+          height : 32px;
+          background: #56A8F70F;
+          border-radius: 50px;
+          text-align: left;
+          font: normal normal normal 14px/22px Gordita;
+          letter-spacing: 0px;
+          padding-left : 4px;
+          padding-right: 4px;
+        }
+        .itemdarkblue {
+          display: flex;
+          flex-wrap : nowrap;
+          height : 32px;
+          background: #6C7BD40F;
+          border-radius: 50px;
+          text-align: left;
+          font: normal normal normal 14px/22px Gordita;
+          letter-spacing: 0px;
+          padding-left : 4px;
+          padding-right: 4px;
+        }
+        .itemicon{
           width : 20px;
           height : 20px;
-          
         }
-        .checkitem{
-          padding-top:7px;
+        a {
+          width: auto;
+          color : black;
+          padding-top : 2px;
         }
       `}
       </style>
-      <p className="checkalsothis">{title}</p>
       <div className="checkalsobox">
-        {listOfJobs.map((aJob, index) => {
-          return (
-            <a href="#">
-              <span key={"lsj-" + index} className="checkalsoitembox">
-                <img src={setColor.icon} /><a href={aJob.jobPage}
-                  className="checkitem"> {aJob.jobTitle}</a>
-              </span>
-            </a>
-          );
-        })}
+        <h5> {title}</h5>
+        <div className="itemlist">
+
+          {listOfJobs.map((aJob, index) => {
+            return (
+              <div className={colorClass} key={"lsj-" + index}>
+                <div className="itemicon">
+                  <img src={setColor.icon} />
+                </div>
+                <a href={aJob.jobPage}> {aJob.jobTitle}</a>
+              </div>
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </div >
   );
 }
