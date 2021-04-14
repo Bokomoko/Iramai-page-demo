@@ -1,8 +1,10 @@
 .gridcontainer {
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 30px 0px;
+  grid-row-gap: 20px;
+  grid-column-gap: 0px;
   grid-template-areas:
     'cover cover cover'
     'firstcolumn secondcolumn '
@@ -18,15 +20,25 @@
 .firstcolumn {
   grid-area: firstcolumn;
   margin-top: 700px;
-  padding-left: 200px;
+  margin-left: 200px;
+  max-width: 700px;
+  min-width: 350px;
   width: 66%;
-  margin-left: 0px;
-  height: 1800px;
+  margin-left: 10px;
+  height: auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
 .secondcolumn {
+  display: flex;
+  flex-direction: column;
   grid-area: secondcolumn;
+  margin-top: 700px;
+  width: 40%;
+}
+
+.buttonapply {
+  max-width: 328;
 }

@@ -33,6 +33,7 @@
   "devDependencies": {
     "@types/styled-components": "^5.1.9",
     "globby": "^11.0.2",
-    "prisma": "^2.17.0"
+    "prisma": "^2.17.0",
+    "typescript": "^4.2.4"
   }
 }

@@ -127,8 +127,11 @@ export default function Test() {
           listItems={listOfRequirements}
         />
         <FancyList listTitle="Preferred Skills" listItems={listOfSkills} />
-        <Button>"Apply as React/Node Developer"</Button>
-
+        <div className={styles.buttonapply}>
+          <Button>Apply as React/Node Developer</Button>
+        </div>
+      </div>
+      <div className={styles.secondcolumn}>
         <TuringTxtCarousel listOfArticles={jobArticles} />
         <TuringTestimonialCarousel listOfTestimonials={testmList} />
       </div>

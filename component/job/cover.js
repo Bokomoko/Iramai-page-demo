@@ -27,7 +27,9 @@ export default function Cover(props) {
       <div className={styles.jobdesc}>
         <h1>{cover_title}</h1>
         <p>{description}</p>
-        <Button jobcta={cta_url}>{cover_cta}</Button>
+        <div className={styles.buttonapply}>
+          <Button jobcta={cta_url}>{cover_cta}</Button>
+        </div>
       </div>
     </div>
   );
