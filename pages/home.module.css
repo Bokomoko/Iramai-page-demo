@@ -152,14 +152,17 @@
         min-height: 800px;
         padding-top: 60px;
     }
+
     .txt_lg {
         font-family: "Gordita";
         font-size: 34px;
     }
+
     .txt_sm {
         font-family: "Gordita";
         font-size: 14px;
     }
+
     .img {
         position: relative;
         width: 290px;
@@ -201,32 +204,39 @@
         -ms-flex-order: 1;
         order: 1;
     }
+
     .intro {
         height: auto;
         min-height: 800px;
         padding-top: 60px;
     }
+
     .txt_lg {
         font-family: "Gordita";
         font-size: 34px;
         line-height: 30px;
     }
+
     .txt_sm {
         font-family: "Gordita";
         font-size: 14px;
     }
+
     .img {
         position: relative;
         width: 290px;
         height: 286px;
         margin-left: 48px;
     }
+
     .company_info {
         margin-top: 20px;
     }
+
     .txt_sm_pm {
         padding-top: 10px;
     }
+
     .padding_btn {
         padding-top: 20px;
     }
@@ -238,16 +248,19 @@
         font-family: "Gordita";
         font-size: 34px;
     }
+
     .txt_sm {
         font-family: "Gordita";
         font-size: 14px;
     }
+
     .img {
         position: relative;
         width: 290px;
         height: 286px;
         margin-left: 48px;
     }
+
     .company_info {
         margin-top: 20px;
     }
@@ -279,6 +292,7 @@
         width: 100%;
         padding-top: 80%;
     }
+
     .img > .content {
         position: absolute;
         top: 0;
@@ -403,7 +417,7 @@
     transition: all 1.8s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.img .stopanimation {
+.img > .stopanimation {
     opacity: 1;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -414,6 +428,7 @@
     display: flex;
     flex-direction: row;
 }
+
 .turing_demo_title {
     width: 35%;
     display: flex;
@@ -423,12 +438,9 @@
 }
 
 
-
 .txt_bold {
     font-weight: 700;
 }
-
-
 
 
 .turing_demo_developer {
@@ -468,52 +480,60 @@
 }
 
 @media screen and (max-width: 768px) {
-    .section  {
+    .section {
         width: 100%;
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .talent_title {
         width: 100%;
         padding-left: 20px;
         padding-right: 20px;
         order: 2;
     }
+
     .offer_content {
         display: flex;
         flex-direction: column;
         margin-left: 0;
     }
+
     .turing_demo {
         display: flex;
         flex-direction: column;
     }
+
     .introduce {
         display: flex;
         flex-direction: column;
     }
 
-    .talent  {
+    .talent {
         display: flex;
         flex-direction: column;
         padding: 50px 0px 0px;
     }
+
     .turing_offers {
         padding-top: 50px;
         margin-bottom: 5vh;
     }
 
-    .turing_demo_title  {
+    .turing_demo_title {
         width: 100%;
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .txt_lg {
         font-size: 16px;
     }
+
     .talent_img {
         width: 100%;
     }
+
     .talent_title {
         width: 100%;
         padding-top: 50px;
@@ -545,11 +565,12 @@
         flex-direction: column;
     }
 
-    .turing_demo_title  {
+    .turing_demo_title {
         width: 100%;
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .turing_demo_developer .talent_title .talent_img .turing_demo_developer {
         width: 100%;
         padding-left: 20px;
@@ -572,16 +593,18 @@
         padding-left: 40px;
         padding-right: 40px;
     }
+
     .offer_content .turing_demo {
         display: flex;
         flex-direction: column;
     }
 
-    .turing_demo_title  {
+    .turing_demo_title {
         width: 100%;
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .turing_demo_developer .talent_title .talent_img {
         width: 100%;
         padding-left: 20px;
