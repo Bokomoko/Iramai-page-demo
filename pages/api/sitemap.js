@@ -1,5 +1,5 @@
 const builder = require("xmlbuilder");
-const { getAllJobs } = require("../jobs/job_data");
+const { getAllJobs } = require("../../service/jobs/job_data");
 const globby = require("globby");
 
 export default async (req, res) => {
@@ -10,7 +10,7 @@ export default async (req, res) => {
     const pages = await globby([
       'pages/**/*.{js,tsx,mdx}', // All routes inside /pages,
       '!pages/api', // Ignore API routes
-      '!pages/jobs', // Ignore API routes      
+      '!pages/jobs', // Ignore API routes
       '!pages/**/[*.{js,tsx}' // Ignore my dynamic route index Example /pages/jobs/[id].js
     ]);
 
