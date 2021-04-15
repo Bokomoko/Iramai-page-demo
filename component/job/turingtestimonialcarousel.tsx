@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 interface Testimonial {
   image: string;
   name: string;
@@ -6,108 +5,63 @@ interface Testimonial {
   country: string;
   text: String;
 }
-
-import {
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption,
-} from 'reactstrap';
+import React, { useState } from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+import styles from './turingtestimonialcarousel.module.css';
 
 export default function TuringTestimonialCarousel(props) {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
-
+  const [index, setIndex] = useState(0);
   const { listOfTestimonials } = props;
 
-  const next = () => {
-    if (animating) return;
-    const nextIndex =
-      activeIndex === listOfTestimonials.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
   };
 
-  const previous = () => {
-    if (animating) return;
-    const nextIndex =
-      activeIndex === 0 ? listOfTestimonials.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
-  };
+  const turingNextArrow = (
+    <span aria-hidden={true} className={styles.carouselarrow}>
+      ❯
+    </span>
+  );
+
+  const turingPreviousArrow = (
+    <span aria-hidden={true} className={styles.carouselarrow}>
+      ❮
+    </span>
+  );
+
+
 
   const slides = listOfTestimonials.map((aTestimonial: Testimonial, index) => {
     return (
-      <CarouselItem
-        className="testimonialitem"
-        tag="div"
-        key={index}
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}
+      <Carousel.Item
+        key={'tstm-' + index}
       >
-        <img src={aTestimonial.image} className="testimonialpicture"></img>
-        <h3>{aTestimonial.name},{aTestimonial.country}</h3>
-        <h4>{aTestimonial.jobTitle}</h4>
-        <q>{aTestimonial.text} </q>
-      </CarouselItem>
+        <div className={styles.testimonialitem}>
+          <img src={aTestimonial.image} className={styles.testimonialpicture} ></img>
+          <h3>{aTestimonial.name},{aTestimonial.country}</h3>
+          <h4>{aTestimonial.jobTitle}</h4>
+          <q>{aTestimonial.text} </q>
+        </div>
+      </Carousel.Item>
     );
   });
 
   return (
     <div>
-      <style>
-        {`
-          .carousel-control-right {
-            color : black;
-          }
-
-          .testimonialitem {
-            width : 80%;
-            padding-left : 40px;
-            heigth : auto;
-            margin : 20px;
-          }
-          .testimonialpicture {
-            width: 100px;
-            heigth : 100px;
-            border-radius : 50%;
-          }
-
-          .testimonialbox {
-            text-align : center;
-            margin : auto;
-            width : 80%;
-            max-width: 
-          }
-
-          .arrows {
-            margin-top : 60px;
-            width: 10%;
-            height : 60px;
-            background-color : grey;
-          }
-
-        `}
-      </style>
       <Carousel
-        activeIndex={activeIndex}
-        next={next}
-        previous={previous}
-        className="testimonialbox"
+        controls={true}
+        indicators={false}
+        className={styles.carouselbox}
+        activeIndex={index}
+        interval={3000}
+        onSelect={handleSelect}
+        nextIcon={turingNextArrow}
+        prevIcon={turingPreviousArrow}
+        fade={true}
+        slide={false}
       >
         {slides}
-        <CarouselControl
-          className="arrows"
-          direction="prev"
-          directionText="Previous"
-          onClickHandler={previous}
-        />
-        <CarouselControl
-          className="arrows"
-          direction="next"
-          directionText="Next"
-          onClickHandler={next}
-        />
       </Carousel>
-    </div>
+    </div >
   );
 }

@@ -1,25 +1,26 @@
-// simple page to test new components
-
-// as of april 04 -> New props on Cover component
+// prototype job detail page
 
 import React from 'react';
 
-// Turing site react components
+// standard libraries imports
+import Button from 'react-bootstrap/Button';
+
+// Turing react components
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Cover from '../component/job/cover';
 import FancyList from '../component/job/fancylist';
-import TuringTxtCarousel from '../component/job/turingtxtcarousel.js';
 import TuringTestimonialCarousel from '../component/job/turingtestimonialcarousel.tsx';
-
-// standar libraries imports
-import Button from 'react-bootstrap/Button';
+import SeeAlso from '../component/job/seealso';
+import WhyJoinTuring from '../component/job/whyjointuring';
 import styles from './test.module.css';
 
+// get data from API
 // import { getAllJobs } from './jobs/job_data';
 
 export default function Test() {
+  // load list of responsibilities of the job
   const listOfResponsibilities = [
     'Design and build scalable APIs',
     'Write clean, efficient, and reusable code',
@@ -33,6 +34,7 @@ export default function Test() {
     'Experience in Unix/Linux environments, including basic commands and scripting',
   ];
 
+  // load list of requirements for the job
   const listOfRequirements = [
     'Bachelor´s/Master´s degree in Computer Science (or equivalent experience)',
     '3+ years of experience in web development(we make rare exceptions if you are highly skilled)',
@@ -42,6 +44,7 @@ export default function Test() {
     'The ability to work full-time (40 hours/week0 concurrently with US time zones for a minimum of 4 hous/day',
   ];
 
+  // load list of desirable skills for the job
   const listOfSkills = [
     'Experience in cross-browser compatibility, and the responsive design of applications',
     'Proficiency in code versioning tools, such as Git',
@@ -49,20 +52,22 @@ export default function Test() {
     'Experience in Unix/Linux environments, including basic commands and scripting',
   ];
 
-  const testimonialImage = 'https://randomuser.me/api/portraits/men/35.jpg';
-  const testimonialName = 'Hadji';
-  const testimonialCountry = 'Algeria';
-  const testimonialJobTitle = 'Fullstack Developer';
-  const testimonialText = `
-  I have previously worked at oDeks and Elance (now popularly known as Upwork)
-   for more than 5 years, but the pivotal moment in my career came when i 
-   joined the global team of Turing remote engineers in 2020. 
-   I did not imagine that the jobs I was offered would come with 
-   such stability and prominence. 
-   Apply to be one of among many Turing developers. 
-   It wil change your life, like it did mine!`;
-
+  // load testimonials
   const testmList = [
+    {
+      image: 'https://randomuser.me/api/portraits/men/35.jpg',
+      name: 'Hadji',
+      country: 'Algeria',
+      jobTitle: 'Fullstack Developer',
+      text: `
+      I have previously worked at oDeks and Elance (now popularly known as Upwork)
+      for more than 5 years, but the pivotal moment in my career came when i 
+      joined the global team of Turing remote engineers in 2020. 
+      I did not imagine that the jobs I was offered would come with 
+      such stability and prominence. 
+      Apply to be one of among many Turing developers. 
+      It wil change your life, like it did mine!`,
+    },
     {
       image: 'https://randomuser.me/api/portraits/women/75.jpg',
       name: 'Chandra',
@@ -82,12 +87,13 @@ export default function Test() {
       image: 'https://randomuser.me/api/portraits/men/85.jpg',
       name: 'Thor',
       country: 'Asgard',
-      jobTitle: 'Son of the boss',
+      jobTitle: 'God of Thunder',
       text:
         'If neither money nor violence solved the issue probably not enough was applied',
     },
   ];
 
+  // load list articles about/from Turing in other sites
   const jobArticles = [
     {
       quote:
@@ -108,11 +114,76 @@ export default function Test() {
     },
   ];
 
+  // load list of job suggestions based on career
+  const basedOnCareer = [
+    { jobTitle: 'Engineer', jobPage: '#' },
+    { jobTitle: 'Architect', jobPage: '#' },
+    { jobTitle: 'Tech Lead', jobPage: '#' },
+    { jobTitle: 'Tech Lead Manager', jobPage: '#' },
+    { jobTitle: 'Engineer Director', jobPage: '#' },
+    { jobTitle: 'Senior Engineer', jobPage: '#' },
+    { jobTitle: 'Senior Architect', jobPage: '#' },
+    { jobTitle: 'Senior Tech Lead', jobPage: '#' },
+    { jobTitle: 'Senior Tech Lead Manager', jobPage: '#' },
+    { jobTitle: 'VP of Engineering', jobPage: '#' },
+  ];
+
+  // load list of suggestions based on roles
+  const basedOnYourRole = [
+    { jobTitle: 'Fullstack', jobPage: '#' },
+    { jobTitle: 'Frontend', jobPage: '#' },
+    { jobTitle: 'Backend', jobPage: '#' },
+    { jobTitle: 'Mobile', jobPage: '#' },
+    { jobTitle: 'AI/ML', jobPage: '#' },
+    { jobTitle: 'DevOps', jobPage: '#' },
+  ];
+
+  // load list of suggestions based on skills
+  const basedOnYourSkills = [
+    { jobTitle: 'React Native', jobPage: '#' },
+    { jobTitle: 'Ruby on Rails', jobPage: '#' },
+    { jobTitle: 'Python', jobPage: '#' },
+    { jobTitle: 'PHP', jobPage: '#' },
+    { jobTitle: 'Java', jobPage: '#' },
+    { jobTitle: 'Vue.js', jobPage: '#' },
+    { jobTitle: 'Golang', jobPage: '#' },
+  ];
+
+  // load list of reasons for working at Turing (I personnaly like them all)
+  const listOfReasons = [
+    {
+      title: 'Work from anywhere',
+      text:
+        'We believe that talent is universal and opportunity should be too. Work from wherever you want.',
+      icon: './icons/globe.svg',
+    },
+    {
+      title: 'Better salary',
+      text:
+        'Turing recommends compensation for developers that far exceed what they would make in their local economies.',
+      icon: './icons/dolarsign.svg',
+    },
+    {
+      title: 'Work-life balance',
+      text:
+        'We allow our engineers flexible working hours as work-life balance is an essential part of our developers wellbeing.',
+      icon: './icons/family.svg',
+    },
+    {
+      title: 'Community',
+      text:
+        'Be a part of an exclusive, global network of top tech leads, engineering managers and software engineers.',
+      icon: './icons/globe.svg',
+    },
+  ];
+
+  // Now let´s get to business and assemble the job detail page
+
   return (
     <>
-      <div>
-        <Container className={styles.jobpage}>
-          <Row className={styles.cover}>
+      <div className={styles.jobpage}>
+        <Container fluid={true}>
+          <Row className={styles.cover} md={1}>
             <Col>
               <Cover
                 cover_title="Remote React/Node Developer Jobs"
@@ -126,7 +197,7 @@ export default function Test() {
           </Row>
           <div className={styles.mainsection}>
             <Row>
-              <Col>
+              <Col className={styles.leftcolumn}>
                 <FancyList
                   listTitle="Job responsibilities"
                   listItems={listOfResponsibilities}
@@ -144,7 +215,30 @@ export default function Test() {
                 </div>
               </Col>
               <Col>
-                <TuringTestimonialCarousel listOfTestimonials={testmList} />
+                <div className={styles.rightcolumn}>
+                  <TuringTestimonialCarousel listOfTestimonials={testmList} />
+                  <h3 className={styles.checkrelated}>Check Related Jobs</h3>
+                  <SeeAlso
+                    title="Based on your career trajectory"
+                    listOfJobs={basedOnCareer}
+                    color="green"
+                  />
+                  <SeeAlso
+                    title="Based on your role"
+                    listOfJobs={basedOnYourRole}
+                    color="blue"
+                  />
+                  <SeeAlso
+                    title="Based on your skills"
+                    listOfJobs={basedOnCareer}
+                    color="darkblue"
+                  />
+                </div>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <WhyJoinTuring reasons={listOfReasons} />
               </Col>
             </Row>
           </div>

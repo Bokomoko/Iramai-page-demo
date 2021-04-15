@@ -21,13 +21,13 @@ export default function TuringArticleCarousel(props) {
   });
 
   const turingNextArrow = (
-    <span aria-hidden="true" className={styles.carouselarrow}>
+    <span aria-hidden={true} className={styles.carouselarrow}>
       ❯
     </span>
   );
 
   const turingPreviousArrow = (
-    <span aria-hidden="true" className={styles.carouselarrow}>
+    <span aria-hidden={true} className={styles.carouselarrow}>
       ❮
     </span>
   );
