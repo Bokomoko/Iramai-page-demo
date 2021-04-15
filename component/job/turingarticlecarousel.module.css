@@ -1,0 +1,37 @@
+.turingcarousel {
+  width: 100%;
+  display: block;
+  margin: auto;
+  justify-items: center;
+}
+.carouselbox {
+  width: 80%;
+  margin: auto;
+  justify-items: center;
+  text-align: center;
+}
+
+.itembox {
+  color: black;
+  width: 80%;
+  margin: auto;
+}
+
+.carouselarrow {
+  color: rgba(204, 204, 204, 1);
+  width: 30px;
+}
+
+.logoboxes {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  column-gap: 10px;
+  justify-items: center;
+}
+
+.logoboxes img {
+  width: 20%;
+  margin: auto;
+}

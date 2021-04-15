@@ -5,13 +5,16 @@
 import React from 'react';
 
 // Turing site react components
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Cover from '../component/job/cover';
 import FancyList from '../component/job/fancylist';
 import TuringTxtCarousel from '../component/job/turingtxtcarousel.js';
 import TuringTestimonialCarousel from '../component/job/turingtestimonialcarousel.tsx';
 
 // standar libraries imports
-import { Button } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
 import styles from './test.module.css';
 
 // import { getAllJobs } from './jobs/job_data';
@@ -106,35 +109,47 @@ export default function Test() {
   ];
 
   return (
-    <div className={styles.gridcontainer}>
-      <div className={styles.cover}>
-        <Cover
-          cover_title="Remote React/Node Developer Jobs"
-          description="At Turing, we are looking for a Full Stack Developer specializing in React and Node.js who will be responsible for the entire web development process to deliver highly scalable, customer-centric, and performant web applications."
-          cover_cta="Apply as React/Node Developer"
-          cta_url="page for applying to job"
-          image_cover="../../public/img/cover1.png"
-          image_alt_text="a guy looking to a LED monitor"
-        />
+    <>
+      <div>
+        <Container className={styles.jobpage}>
+          <Row className={styles.cover}>
+            <Col>
+              <Cover
+                cover_title="Remote React/Node Developer Jobs"
+                description="At Turing, we are looking for a Full Stack Developer specializing in React and Node.js who will be responsible for the entire web development process to deliver highly scalable, customer-centric, and performant web applications."
+                cover_cta="Apply as React/Node Developer"
+                cta_url="page for applying to job"
+                image_cover="../../public/img/cover1.png"
+                image_alt_text="a guy looking to a LED monitor"
+              />
+            </Col>
+          </Row>
+          <div className={styles.mainsection}>
+            <Row>
+              <Col>
+                <FancyList
+                  listTitle="Job responsibilities"
+                  listItems={listOfResponsibilities}
+                />
+                <FancyList
+                  listTitle="Minimum requirements"
+                  listItems={listOfRequirements}
+                />
+                <FancyList
+                  listTitle="Preferred Skills"
+                  listItems={listOfSkills}
+                />
+                <div className={styles.buttonapply}>
+                  <Button>Apply as React/Node Developer</Button>
+                </div>
+              </Col>
+              <Col>
+                <TuringTestimonialCarousel listOfTestimonials={testmList} />
+              </Col>
+            </Row>
+          </div>
+        </Container>
       </div>
-      <div className={styles.firstcolumn}>
-        <FancyList
-          listTitle="Job responsibilities"
-          listItems={listOfResponsibilities}
-        />
-        <FancyList
-          listTitle="Minimum requirements"
-          listItems={listOfRequirements}
-        />
-        <FancyList listTitle="Preferred Skills" listItems={listOfSkills} />
-        <div className={styles.buttonapply}>
-          <Button>Apply as React/Node Developer</Button>
-        </div>
-      </div>
-      <div className={styles.secondcolumn}>
-        <TuringTxtCarousel listOfArticles={jobArticles} />
-        <TuringTestimonialCarousel listOfTestimonials={testmList} />
-      </div>
-    </div>
+    </>
   );
 }

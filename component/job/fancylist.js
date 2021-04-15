@@ -11,8 +11,8 @@ export default function FancyList(props) {
       <h2>{listTitle}</h2>
       <ul>
         <div className={styles.listItems}>
-          {listItems.map((oneItem) => (
-            <li>{oneItem}</li>
+          {listItems.map((oneItem, index) => (
+            <li key={'fclist' + index}>{oneItem}</li>
           ))}
         </div>
       </ul>

@@ -1,0 +1,14 @@
+.postcontainer {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.postbox {
+  width: 25%;
+  min-width: 290px;
+  justify-items: left;
+  margin: 0 auto;
+}

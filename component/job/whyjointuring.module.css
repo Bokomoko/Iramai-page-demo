@@ -1,0 +1,45 @@
+.reasoncontainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: auto;
+  background: #fcfcfc 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.reasonbox {
+  display: block;
+  width: 290px;
+  text-align: left;
+  font: normal normal normal 14px/22px Gordita;
+  letter-spacing: 0px;
+  color: #212121;
+  opacity: 1;
+  background-color: white;
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+  margin: 7px;
+}
+
+.reasonbox h5 {
+  margin: 24px;
+  text-align: left;
+  font: normal normal medium 16px/21px Gordita;
+  letter-spacing: 0px;
+  color: #212121;
+  opacity: 1;
+}
+
+.reasonbox p {
+  margin: 24px;
+  text-align: left;
+  font: normal normal normal 14px/22px Gordita;
+  letter-spacing: 0px;
+  color: #212121;
+}
+
+.reasonbox img {
+  width: 33px;
+  height: 33px;
+  margin: 24px;
+}
