@@ -1,4 +1,3 @@
-import { DirectiveLocation } from 'graphql';
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Figure from 'react-bootstrap/Figure';
@@ -13,7 +12,6 @@ export default function TuringArticleCarousel(props) {
     setIndex(selectedIndex);
   };
 
-  const rightArrow = <span className={styles.rarrow}> ⇨ </span>;
   const sitesLogos = listOfArticles.map((oneArticle, index) => {
     return (
       <Figure key={'img-' + index}>
