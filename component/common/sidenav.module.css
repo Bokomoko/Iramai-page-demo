@@ -1,0 +1,126 @@
+.sidenav {
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    width: 414px;
+    height: 896px;
+    position: absolute;
+    background: #00000052 0% 0% no-repeat padding-box;
+    transform: translateX(0);
+    /*animation: slide_left 0.8s cubic-bezier(0.43, 0.01, 0.38, 1.19);*/
+}
+
+@keyframes slide_left {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.menu {
+    top: 0px;
+    left: 0px;
+    width: 414px;
+    height: 495px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+.menu_container {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.buttons {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+}
+
+.h1 {
+    font-family: "Gordita";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2.36;
+    margin-top: 5px;
+    color: #151515 !important;
+}
+
+.nav_item {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-top: 1px solid #EEEEEE;
+    text-decoration: none;
+}
+
+.nav_item a {
+    color: #444444;
+}
+.nav_item_btn {
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.label {
+    width: 90%;
+}
+
+.close {
+    border-color: transparent !important;
+    float: right;
+    width: auto;
+    flex-direction: row-reverse;
+    background-color: transparent;
+    font-size: 24px;
+}
+
+.menu_header {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn {
+    background: #2E6EDF 0 0 no-repeat padding-box;
+    border-radius: 6px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 25px;
+    transition: all 0.5s;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    border-color: transparent !important;
+}
+
+.btn_hire {
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+    opacity: 1;
+    z-index: 10000;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 10px;
+    height: 48px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 25px;
+    transition: all 0.5s;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+}
+
+.button_custom {
+    color: #444444;
+}
+

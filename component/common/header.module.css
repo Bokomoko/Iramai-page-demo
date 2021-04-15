@@ -14,6 +14,11 @@
     max-width: 2560px;
     margin: 0 auto;
     height: 55px;
+    min-width: 414px;
+}
+
+.menu {
+    display: none;
 }
 
 .container {
@@ -47,11 +52,33 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+    .left {
+        width: 100%;
+    }
     .right {
         display: none !important;
     }
     .right1 {
         display: none !important;
+    }
+
+    .menu_header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu_label {
+        width: 90%;
+    }
+
+    .menu {
+        display: block;
+        border-color: transparent !important;
+        float: right;
+        width: auto;
+        flex-direction: row-reverse;
+        background-color: transparent;
+        font-size: 24px;
     }
 }
 

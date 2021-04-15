@@ -23,7 +23,7 @@
 
 .txt_sm {
     font-family: "Gordita";
-    font-size: 16px;
+    font-size: 14px;
     line-height: 30px;
     color: #444444;
     opacity: 1;
@@ -134,6 +134,11 @@
     text-align: center;
 }
 
+.introduce {
+    display: flex;
+    flex-direction: row;
+}
+
 @media screen and (max-width: 768px) and (min-width: 320px) {
     .intro .container .left {
         padding-left: calc(20px + 20 * (100vw - 320px) / 448);
@@ -147,14 +152,17 @@
         min-height: 800px;
         padding-top: 60px;
     }
+
     .txt_lg {
         font-family: "Gordita";
         font-size: 34px;
     }
+
     .txt_sm {
         font-family: "Gordita";
         font-size: 14px;
     }
+
     .img {
         position: relative;
         width: 290px;
@@ -173,7 +181,6 @@
     }
 
     .txt_lg {
-        font-family: "Gordita";
         font-size: 34px;
     }
 
@@ -197,32 +204,39 @@
         -ms-flex-order: 1;
         order: 1;
     }
+
     .intro {
         height: auto;
         min-height: 800px;
         padding-top: 60px;
     }
+
     .txt_lg {
         font-family: "Gordita";
         font-size: 34px;
         line-height: 30px;
     }
+
     .txt_sm {
         font-family: "Gordita";
         font-size: 14px;
     }
+
     .img {
         position: relative;
         width: 290px;
         height: 286px;
         margin-left: 48px;
     }
+
     .company_info {
         margin-top: 20px;
     }
+
     .txt_sm_pm {
         padding-top: 10px;
     }
+
     .padding_btn {
         padding-top: 20px;
     }
@@ -234,16 +248,19 @@
         font-family: "Gordita";
         font-size: 34px;
     }
+
     .txt_sm {
         font-family: "Gordita";
         font-size: 14px;
     }
+
     .img {
         position: relative;
         width: 290px;
         height: 286px;
         margin-left: 48px;
     }
+
     .company_info {
         margin-top: 20px;
     }
@@ -275,6 +292,7 @@
         width: 100%;
         padding-top: 80%;
     }
+
     .img > .content {
         position: absolute;
         top: 0;
@@ -399,7 +417,7 @@
     transition: all 1.8s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.img .stopanimation {
+.img > .stopanimation {
     opacity: 1;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -410,6 +428,7 @@
     display: flex;
     flex-direction: row;
 }
+
 .turing_demo_title {
     width: 35%;
     display: flex;
@@ -418,40 +437,11 @@
     padding-right: 50px;
 }
 
-.dev_profile {
-    padding-left: 16px;
-    padding-right: 16px;
-    width: 160px;
-    height: 160px;
+
+.txt_bold {
+    font-weight: 700;
 }
 
-.dev_recommendation {
-    padding-right: 72px;
-    margin-left: 160px;
-    margin-top: -50px;
-}
-
-.dev_main {
-    display: flex;
-    flex-direction: row;
-}
-
-.turing_demo_developer_profile {
-    display: flex;
-    flex-direction: column;
-    padding-top: 100px;
-}
-
-.line {
-    width: 100%;
-    border: 1px solid #EEEEEE;
-    opacity: 1;
-}
-
-.introduce {
-    display: flex;
-    flex-direction: row;
-}
 
 .turing_demo_developer {
     width: 65%;
@@ -460,11 +450,6 @@
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-}
-
-.job_time {
-    display: flex;
-    flex-direction: row;
 }
 
 .talent {
@@ -490,54 +475,68 @@
     height: 496px;
 }
 
+.order_img {
+    padding-top: 200px;
+}
+
 @media screen and (max-width: 768px) {
-    .section  {
+    .section {
         width: 100%;
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .talent_title {
         width: 100%;
         padding-left: 20px;
         padding-right: 20px;
         order: 2;
     }
+
     .offer_content {
         display: flex;
         flex-direction: column;
         margin-left: 0;
     }
+
     .turing_demo {
         display: flex;
         flex-direction: column;
     }
+
     .introduce {
         display: flex;
         flex-direction: column;
     }
 
-    .talent  {
+    .talent {
         display: flex;
         flex-direction: column;
         padding: 50px 0px 0px;
     }
+
     .turing_offers {
         padding-top: 50px;
+        margin-bottom: 5vh;
     }
 
-    .turing_demo_title  {
+    .turing_demo_title {
         width: 100%;
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .txt_lg {
         font-size: 16px;
     }
+
     .talent_img {
         width: 100%;
     }
+
     .talent_title {
         width: 100%;
+        padding-top: 50px;
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -546,6 +545,7 @@
         width: 100%;
         padding-left: 20px;
         padding-right: 20px;
+        margin-top: 50px;
     }
 
     .talent_img_content {
@@ -553,23 +553,9 @@
         height: 301px;
     }
 
-    .dev_recommendation {
-        padding: 10px 5px;
-        margin: 1px;
-    }
-
-    .dev_profile {
-        padding-left: 5px;
-        padding-right: 5px;
-        width: 60px;
-        height: 60px;
-    }
-
-    .turing_demo_developer_profile {
-        padding-top: 40px;
-    }
     .order_img {
         order: 2;
+        padding-top: 20px
     }
 }
 
@@ -579,11 +565,12 @@
         flex-direction: column;
     }
 
-    .turing_demo_title  {
+    .turing_demo_title {
         width: 100%;
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .turing_demo_developer .talent_title .talent_img .turing_demo_developer {
         width: 100%;
         padding-left: 20px;
@@ -606,16 +593,18 @@
         padding-left: 40px;
         padding-right: 40px;
     }
+
     .offer_content .turing_demo {
         display: flex;
         flex-direction: column;
     }
 
-    .turing_demo_title  {
+    .turing_demo_title {
         width: 100%;
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .turing_demo_developer .talent_title .talent_img {
         width: 100%;
         padding-left: 20px;
