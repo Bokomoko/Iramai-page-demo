@@ -3,6 +3,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: Gordita;
+    min-width: 414px !important;
 }
 
 a {
@@ -17,6 +18,12 @@ a {
 .layout {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    min-width: 414px;
+}
+
+.txt_bold {
+    font-weight: 700;
 }
 
 @font-face {

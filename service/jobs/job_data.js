@@ -32,15 +32,8 @@ export async function getAllJobs() {
   const { data } = await client.query({
     query: gql`
       {
-        query
-        Getjobs {
-          jobs {
-            id
-            description
-            cover_title
-            cover_image_url
-            url
-          }
+        jobs {
+          url
         }
       }
     `,
