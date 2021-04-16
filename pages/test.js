@@ -12,6 +12,7 @@ import Col from 'react-bootstrap/Col';
 import Cover from '../component/job/cover';
 import FancyList from '../component/job/fancylist';
 import TuringTestimonialCarousel from '../component/job/turingtestimonialcarousel.tsx';
+import TestimonialVideos from '../component/job/testimonialvideos.js';
 import SeeAlso from '../component/job/seealso';
 import WhyJoinTuring from '../component/job/whyjointuring';
 import styles from './test.module.css';
@@ -236,8 +237,12 @@ export default function Test() {
             </Col>
           </Row>
           <Row>
+            <Col></Col>
+          </Row>
+          <Row>
             <Col className={styles.centercolumn}>
               <WhyJoinTuring reasons={listOfReasons} />
+              <TestimonialVideos listOfVideos={'x'} />
               <h3 className={styles.checkrelated}>Check our Open Jobs</h3>
               <SeeAlso
                 title="Based on your career trajectory"
