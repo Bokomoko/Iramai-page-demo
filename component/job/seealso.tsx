@@ -33,8 +33,8 @@ export default function SeeAlso(props) {
       <style>
         {`
         .checkalsobox {
-          max-width: 308px;
-          display:block;
+          width : 90%;
+          display: block;
           height : auto;
           align-itens : baseline;
           color: black;
@@ -49,7 +49,7 @@ export default function SeeAlso(props) {
 
         .itemlist {
           display:flex;
-          width: 408px;
+          width: 100%;
           flex-wrap : wrap;
           row-gap : 7px;
           column-gap : 7px;

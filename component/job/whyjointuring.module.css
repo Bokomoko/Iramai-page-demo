@@ -3,8 +3,8 @@
   flex-wrap: wrap;
   flex-direction: row;
   height: auto;
-  background: #fcfcfc 0% 0% no-repeat padding-box;
   opacity: 1;
+  margin-top: 80px;
 }
 
 .reasonbox {
@@ -42,4 +42,10 @@
   width: 33px;
   height: 33px;
   margin: 24px;
+}
+
+.whyjoin {
+  padding-top: 80px;
+  background: #fcfcfc 0% 0% no-repeat padding-box;
+  border-radius: 4px;
 }
