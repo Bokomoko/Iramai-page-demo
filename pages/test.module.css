@@ -34,8 +34,15 @@
   padding-left: 40px;
 }
 
+.centercolumn {
+  margin-left: 200px;
+  max-width: 70%;
+}
+
 .leftcolumn {
+  margin-left: 200px;
   max-width: 698px;
+  margin-bottom: 80px;
 }
 
 .checkrelated {

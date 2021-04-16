@@ -155,7 +155,7 @@ export default function Test() {
       title: 'Work from anywhere',
       text:
         'We believe that talent is universal and opportunity should be too. Work from wherever you want.',
-      icon: './icons/globe.svg',
+      icon: './icons/wholeworld.svg',
     },
     {
       title: 'Better salary',
@@ -173,7 +173,7 @@ export default function Test() {
       title: 'Community',
       text:
         'Be a part of an exclusive, global network of top tech leads, engineering managers and software engineers.',
-      icon: './icons/globe.svg',
+      icon: './icons/community.svg',
     },
   ];
 
@@ -195,53 +195,67 @@ export default function Test() {
               />
             </Col>
           </Row>
-          <div className={styles.mainsection}>
-            <Row>
-              <Col className={styles.leftcolumn}>
-                <FancyList
-                  listTitle="Job responsibilities"
-                  listItems={listOfResponsibilities}
+          <Row>
+            <Col className={styles.leftcolumn}>
+              <FancyList
+                listTitle="Job responsibilities"
+                listItems={listOfResponsibilities}
+              />
+              <FancyList
+                listTitle="Minimum requirements"
+                listItems={listOfRequirements}
+              />
+              <FancyList
+                listTitle="Preferred Skills"
+                listItems={listOfSkills}
+              />
+              <div className={styles.buttonapply}>
+                <Button>Apply as React/Node Developer</Button>
+              </div>
+            </Col>
+            <Col>
+              <div className={styles.rightcolumn}>
+                <TuringTestimonialCarousel listOfTestimonials={testmList} />
+                <h3 className={styles.checkrelated}>Check Related Jobs</h3>
+                <SeeAlso
+                  title="Based on your career trajectory"
+                  listOfJobs={basedOnCareer}
+                  color="green"
                 />
-                <FancyList
-                  listTitle="Minimum requirements"
-                  listItems={listOfRequirements}
+                <SeeAlso
+                  title="Based on your role"
+                  listOfJobs={basedOnYourRole}
+                  color="blue"
                 />
-                <FancyList
-                  listTitle="Preferred Skills"
-                  listItems={listOfSkills}
+                <SeeAlso
+                  title="Based on your skills"
+                  listOfJobs={basedOnCareer}
+                  color="darkblue"
                 />
-                <div className={styles.buttonapply}>
-                  <Button>Apply as React/Node Developer</Button>
-                </div>
-              </Col>
-              <Col>
-                <div className={styles.rightcolumn}>
-                  <TuringTestimonialCarousel listOfTestimonials={testmList} />
-                  <h3 className={styles.checkrelated}>Check Related Jobs</h3>
-                  <SeeAlso
-                    title="Based on your career trajectory"
-                    listOfJobs={basedOnCareer}
-                    color="green"
-                  />
-                  <SeeAlso
-                    title="Based on your role"
-                    listOfJobs={basedOnYourRole}
-                    color="blue"
-                  />
-                  <SeeAlso
-                    title="Based on your skills"
-                    listOfJobs={basedOnCareer}
-                    color="darkblue"
-                  />
-                </div>
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <WhyJoinTuring reasons={listOfReasons} />
-              </Col>
-            </Row>
-          </div>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col className={styles.centercolumn}>
+              <WhyJoinTuring reasons={listOfReasons} />
+              <h3 className={styles.checkrelated}>Check our Open Jobs</h3>
+              <SeeAlso
+                title="Based on your career trajectory"
+                listOfJobs={basedOnCareer}
+                color="green"
+              />
+              <SeeAlso
+                title="Based on your role"
+                listOfJobs={basedOnYourRole}
+                color="blue"
+              />
+              <SeeAlso
+                title="Based on your skills"
+                listOfJobs={basedOnCareer}
+                color="darkblue"
+              />
+            </Col>
+          </Row>
         </Container>
       </div>
     </>
