@@ -1,12 +1,12 @@
 import React from 'react';
-import styles from './whyjointuring.module.css';
+import styles from './whyjoiniramai.module.css';
 
-export default function WhyJoinTuring(props) {
+export default function WhyJoinIramai(props) {
   const { reasons } = props;
 
   return (
     <div className={styles.whyjoin}>
-      <h2>Why join Turing?</h2>
+      <h2>Why join Iramai?</h2>
 
       <div className={styles.reasoncontainer}>
         {reasons.map((aReason, index) => {
