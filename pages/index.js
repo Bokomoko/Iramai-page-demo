@@ -1,206 +1,268 @@
-import Layout from "../component/layout";
-import styles from "./home.module.css";
-import classNames from "classnames";
-import Link from "next/link";
-import Company from "../component/common/company";
-import React, {useState} from "react";
-import DeveloperProfiles from "../component/developer/DeveloperProfile";
+// prototype job detail page
 
-function HomePage() {
-    const developer = {
-        avatar: '/assets/developer.png',
-        name: 'Daniel Morales',
-        position: 'Fullstack Developer from Mexico',
-        recommendation: "As a full-stack developer, I have 6 years of experience in working on designing distributed systems, building web applications and backend APIs. Contributing to the team\'s success and grasping new concepts quickly are two of my biggest strengths. I am a critical thinker and a lover of people, who is eager to learn new things in life.",
-        work: "Full-time"
-    }
-    const {setDeveloper} = useState();
+import React from 'react';
 
-    function shareInfo() {
-        alert('share info')
-    }
+// standard libraries imports
+import Button from 'react-bootstrap/Button';
 
-    function downloadProfile() {
-        alert('download profile')
-    }
+// Iramai react components
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Cover from '../component/job/cover';
+import FancyList from '../component/job/fancylist';
+import IramaiTestimonialCarousel from '../component/job/iramaitestimonialcarousel.tsx';
+import TestimonialVideos from '../component/job/testimonialvideos.js';
+import SeeAlso from '../component/job/seealso';
+import WhyJoinIramai from '../component/job/whyjoiniramai';
+import styles from './test.module.css';
 
-    return (
-        <Layout>
-            <div className={styles.intro}>
-                <div className="container">
-                    <div className="row">
-                        <div className={classNames("container", styles.introduce)}>
-                            <div className={classNames("container", styles.order_img)}>
-                                <div className="row">
-                                    <div className={classNames("col-12", styles.label)}>
-                                        <h2 className={styles.txt_lg}>Build faster than ever with vetted, remote
-                                            developers</h2>
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className={classNames("col-12")}>
-                                        <h2 className={classNames(styles.txt_sm, styles.txt_sm_pm)}>Hire the top 1% of
-                                            300,000+ remote developers
-                                            using Iramai's Intelligent Talent Cloud. Iramai offers Silicon
-                                            Valley-caliber engineers with a 100% risk-free two-week trial.</h2>
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className={classNames("col-12")}>
-                                        <div className={styles.padding_btn}>
-                                            <a href="/hire" className={classNames(styles.btn, styles.link)}>Hire
-                                                developers</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className={classNames("col-12", styles.padding_btn)}>
-                                        <span className={styles.txt_sm}>Looking for jobs instead?<Link href="#">Apply to jobs</Link></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <img className={classNames(styles.img, styles.animate)} src="/icons/Group_1471.svg"
-                                 alt=""/>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className={styles.company_info}>
-                            <Company/>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className={classNames("container", styles.turing_offers)}>
-                            <h2 className={styles.txt_lg}>What Iramai offers</h2>
-                            <div className={classNames(styles.offer_content)}>
-                                <div className={styles.section}>
-                                    <div className={classNames(styles.img_container)}>
-                                        <img src="icons/Group_4348.svg"/>
-                                    </div>
-                                    <div className="how-it-works-text how-it-works-text-1">
-                                        <div className={styles.offer_label}>
-                                            <div className={classNames(styles.circle)}>1</div>
-                                            <h3 className={styles.offer_title}>Intelligent vetting</h3>
-                                        </div>
-                                        <p className={styles.txt_sm}>
-                                            Built by engineering leaders from Facebook, Google, Microsoft, and
-                                            Stanford, Iramai’s intelligent vetting engine evaluates developers for a
-                                            Silicon Valley bar.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className={styles.section}>
-                                    <div className={classNames(styles.img_container)}>
-                                        <img src="icons/Group_4348.svg"/>
-                                    </div>
-                                    <div className="how-it-works-text how-it-works-text-2">
-                                        <div className={styles.offer_label}>
-                                            <div className={classNames(styles.circle)}>2</div>
-                                            <h3 className={styles.offer_title}>Fast hiring</h3>
-                                        </div>
-                                        <p className={styles.txt_sm}>
-                                            Using assessment tests and automated vetting flow, Iramai’s Intelligent
-                                            Talent Cloud matches most companies with developers within three days.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className={styles.section}>
-                                    <div className={classNames(styles.img_container)}>
-                                        <img src="icons/Group_4348.svg"/>
-                                    </div>
-                                    <div className="how-it-works-text how-it-works-text-3">
-                                        <div className={styles.offer_label}>
-                                            <div className={classNames(styles.circle)}>3</div>
-                                            <h3 className={styles.offer_title}>Remote work made easy</h3>
-                                        </div>
-                                        <p className={styles.txt_sm}>
-                                            Whether it is daily stand-ups, productivity trackers, billing, or simply
-                                            just working with developers in your timezone, Iramai has you covered.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className={classNames("container", styles.turing_demo)}>
-                            <div className={styles.turing_demo_title}>
-                                <div className={classNames(styles.txt_lg)}>
-                                    Iramai Deep<br/> Developer Profiles
-                                </div>
-                                <div className={classNames(styles.txt_sm)}>
-                                    Our in-depth resumes help you know your next developers better. Explore their
-                                    strengths and weaknesses with our Deep Developer Profiles and decide if they are a
-                                    good fit for your team.
-                                </div>
-                                <div className={styles.padding_btn}>
-                                    <a href="/hire" className={classNames(styles.btn, styles.link)}>Hire developers</a>
-                                </div>
-                            </div>
-                            <div className={styles.turing_demo_developer}>
-                                <DeveloperProfiles avatar={developer.avatar}
-                                                   name={developer.name}
-                                                   position={developer.position}
-                                                   recommendation={developer.recommendation}
-                                                   work={developer.work}
-                                                   downloadProfile={() => downloadProfile()}
-                                                   share={() => shareInfo()}/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className={classNames("container", styles.talent)}>
-                            <div className={styles.talent_title}>
-                                <div className={classNames(styles.txt_lg)}>
-                                    Welcome to the Talent Cloud of the future
-                                </div>
-                                <div className={classNames(styles.txt_sm)}>
-                                    Sourced by software, vetted by software and managed by software.
-                                </div>
-                                <div className={styles.padding_btn}>
-                                    <a href="/hire" className={classNames(styles.btn, styles.link)}>Hire developers</a>
-                                </div>
-                            </div>
-                            <div className={styles.talent_img}>
-                                <img className={styles.talent_img_content} src="/icons/dev_desk.svg"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className={classNames("container", styles.talent)}>
-                            <div className={styles.talent_img}>
-                                <img className={styles.talent_img_content} src="/icons/jum.svg"/>
-                            </div>
-                            <div className={styles.talent_title}>
-                                <div className={classNames(styles.txt_lg)}>
-                                    Go #Boundaryless with Iramai
-                                </div>
-                                <div className={classNames(styles.txt_sm)}>
-                                    Hire the best talent in the world, not the best talent that happens to live near
-                                    your office. Go #Boundaryless with us and hire across tech roles, skills, and
-                                    seniority with the push of a button.
-                                </div>
-                                <div className={styles.padding_btn}>
-                                    <a href="/hire" className={classNames(styles.btn, styles.link)}>Hire developers</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className={classNames("container", styles.partner)}>
-                            <div>
-                                "As remote work continues to solidify its place as a critical aspect of how businesses
-                                exist these days, a startup..."
-                            </div>
-                            <Link href="#">Read article</Link>
-                            <div>
-                                <img src="/"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </Layout>
-    )
+// get data from API
+// import { getAllJobs } from './jobs/job_data';
+
+export default function Test() {
+  // load list of responsibilities of the job
+  const listOfResponsibilities = [
+    'Design and build scalable APIs',
+    'Write clean, efficient, and reusable code',
+    'Develop highly efficient user interface components',
+    'Analyze website performance and drive improvements',
+    'Collaborate with cross-functional team members to design, develop, review and test applications',
+    'Stay updated with emerging technologies and apply them to the operational activities in the organization',
+    'Experience in cross-browser compatibility, and the responsive design of applications',
+    'Proficiency in code versioning tools, such as Git',
+    'Expert understanding of server-side logic and fron-end performance optimization',
+    'Experience in Unix/Linux environments, including basic commands and scripting',
+  ];
+
+  // load list of requirements for the job
+  const listOfRequirements = [
+    'Bachelor´s/Master´s degree in Computer Science (or equivalent experience)',
+    '3+ years of experience in web development(we make rare exceptions if you are highly skilled)',
+    'Proficiency in React.js, Node.js, JavaScriipt, HTML and CSS',
+    'Experience with REST APIs and third-party libraries',
+    'Fluency in English and the communications skills of effortlessly collaborate with engineering managers at US software companies',
+    'The ability to work full-time (40 hours/week0 concurrently with US time zones for a minimum of 4 hous/day',
+  ];
+
+  // load list of desirable skills for the job
+  const listOfSkills = [
+    'Experience in cross-browser compatibility, and the responsive design of applications',
+    'Proficiency in code versioning tools, such as Git',
+    'Expert understanding of server-side logic and front-end performance optimization',
+    'Experience in Unix/Linux environments, including basic commands and scripting',
+  ];
+
+  // load testimonials
+  const testmList = [
+    {
+      image: 'https://randomuser.me/api/portraits/men/35.jpg',
+      name: 'Hadji',
+      country: 'Algeria',
+      jobTitle: 'Fullstack Developer',
+      text: `
+      I have previously worked at oDeks and Elance (now popularly known as Upwork)
+      for more than 5 years, but the pivotal moment in my career came when i 
+      joined the global team of Iramai remote engineers in 2020. 
+      I did not imagine that the jobs I was offered would come with 
+      such stability and prominence. 
+      Apply to be one of among many Iramai developers. 
+      It wil change your life, like it did mine!`,
+    },
+    {
+      image: 'https://randomuser.me/api/portraits/women/75.jpg',
+      name: 'Chandra',
+      country: 'Kafiristan',
+      jobTitle: 'Full Stack Dev',
+      text:
+        'In Iramai I´ve found purpose for my life. I didn´t walk quietly into that night',
+    },
+    {
+      image: 'https://randomuser.me/api/portraits/men/75.jpg',
+      name: 'Percival',
+      country: 'Camelot',
+      jobTitle: 'Knight in armor',
+      text: 'Don´t ask who the Graal serves. It serves you, Mylord',
+    },
+    {
+      image: 'https://randomuser.me/api/portraits/men/85.jpg',
+      name: 'Thor',
+      country: 'Asgard',
+      jobTitle: 'God of Thunder',
+      text:
+        'If neither money nor violence solved the issue probably not enough was applied',
+    },
+  ];
+
+  // load list articles about/from Iramai in other sites
+  const jobArticles = [
+    {
+      quote:
+        'As remote work continues to solidify its place as a critical aspect of how business exist these days, a startup ...',
+      articleUrl:
+        'https:https://www.mckinsey.com/featured-insights/future-of-work/whats-next-for-remote-work-an-analysis-of-2000-tasks-800-jobs-and-nine-countries',
+    },
+    {
+      quote:
+        'As each state has its own rules on taxing remote workers, issues of lost of tax income for governments may be ...',
+      articleUrl:
+        'https://www.nytimes.com/2021/03/12/your-money/taxes/2020-taxes-work-from-home.html',
+    },
+    {
+      quote:
+        'The quick and smart brown fox jumps over the lazy dog. And this simple gestures started a war ...',
+      articleUrl: 'https://www.rover.com/blog/the-truth-about-dogs-foxes-in/',
+    },
+  ];
+
+  // load list of job suggestions based on career
+  const basedOnCareer = [
+    { jobTitle: 'Engineer', jobPage: '#' },
+    { jobTitle: 'Architect', jobPage: '#' },
+    { jobTitle: 'Tech Lead', jobPage: '#' },
+    { jobTitle: 'Tech Lead Manager', jobPage: '#' },
+    { jobTitle: 'Engineer Director', jobPage: '#' },
+    { jobTitle: 'Senior Engineer', jobPage: '#' },
+    { jobTitle: 'Senior Architect', jobPage: '#' },
+    { jobTitle: 'Senior Tech Lead', jobPage: '#' },
+    { jobTitle: 'Senior Tech Lead Manager', jobPage: '#' },
+    { jobTitle: 'VP of Engineering', jobPage: '#' },
+  ];
+
+  // load list of suggestions based on roles
+  const basedOnYourRole = [
+    { jobTitle: 'Fullstack', jobPage: '#' },
+    { jobTitle: 'Frontend', jobPage: '#' },
+    { jobTitle: 'Backend', jobPage: '#' },
+    { jobTitle: 'Mobile', jobPage: '#' },
+    { jobTitle: 'AI/ML', jobPage: '#' },
+    { jobTitle: 'DevOps', jobPage: '#' },
+  ];
+
+  // load list of suggestions based on skills
+  const basedOnYourSkills = [
+    { jobTitle: 'React Native', jobPage: '#' },
+    { jobTitle: 'Ruby on Rails', jobPage: '#' },
+    { jobTitle: 'Python', jobPage: '#' },
+    { jobTitle: 'PHP', jobPage: '#' },
+    { jobTitle: 'Java', jobPage: '#' },
+    { jobTitle: 'Vue.js', jobPage: '#' },
+    { jobTitle: 'Golang', jobPage: '#' },
+  ];
+
+  // load list of reasons for working at Iramai (I personnaly like them all)
+  const listOfReasons = [
+    {
+      title: 'Work from anywhere',
+      text:
+        'We believe that talent is universal and opportunity should be too. Work from wherever you want.',
+      icon: './icons/wholeworld.svg',
+    },
+    {
+      title: 'Better salary',
+      text:
+        'Iramai recommends compensation for developers that far exceed what they would make in their local economies.',
+      icon: './icons/dolarsign.svg',
+    },
+    {
+      title: 'Work-life balance',
+      text:
+        'We allow our engineers flexible working hours as work-life balance is an essential part of our developers wellbeing.',
+      icon: './icons/family.svg',
+    },
+    {
+      title: 'Community',
+      text:
+        'Be a part of an exclusive, global network of top tech leads, engineering managers and software engineers.',
+      icon: './icons/community.svg',
+    },
+  ];
+
+  // Now let´s get to business and assemble the job detail page
+
+  return (
+    <>
+      <div className={styles.jobpage}>
+        <Container fluid={true}>
+          <Row className={styles.cover} md={1}>
+            <Col>
+              <Cover
+                cover_title="Remote React/Node Developer Jobs"
+                description="At Iramai, we are looking for a Full Stack Developer specializing in React and Node.js who will be responsible for the entire web development process to deliver highly scalable, customer-centric, and performant web applications."
+                cover_cta="Apply as React/Node Developer"
+                cta_url="page for applying to job"
+                image_cover="../../public/img/cover1.png"
+                image_alt_text="a guy looking to a LED monitor"
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col className={styles.leftcolumn}>
+              <FancyList
+                listTitle="Job responsibilities"
+                listItems={listOfResponsibilities}
+              />
+              <FancyList
+                listTitle="Minimum requirements"
+                listItems={listOfRequirements}
+              />
+              <FancyList
+                listTitle="Preferred Skills"
+                listItems={listOfSkills}
+              />
+              <div className={styles.buttonapply}>
+                <Button>Apply as React/Node Developer</Button>
+              </div>
+            </Col>
+            <Col>
+              <div className={styles.rightcolumn}>
+                <IramaiTestimonialCarousel listOfTestimonials={testmList} />
+                <h3 className={styles.checkrelated}>Check Related Jobs</h3>
+                <SeeAlso
+                  title="Based on your career trajectory"
+                  listOfJobs={basedOnCareer}
+                  color="green"
+                />
+                <SeeAlso
+                  title="Based on your role"
+                  listOfJobs={basedOnYourRole}
+                  color="blue"
+                />
+                <SeeAlso
+                  title="Based on your skills"
+                  listOfJobs={basedOnCareer}
+                  color="darkblue"
+                />
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col></Col>
+          </Row>
+          <Row>
+            <Col className={styles.centercolumn}>
+              <WhyJoinIramai reasons={listOfReasons} />
+              <TestimonialVideos listOfVideos={'x'} />
+              <h3 className={styles.checkrelated}>Check our Open Jobs</h3>
+              <SeeAlso
+                title="Based on your career trajectory"
+                listOfJobs={basedOnCareer}
+                color="green"
+              />
+              <SeeAlso
+                title="Based on your role"
+                listOfJobs={basedOnYourRole}
+                color="blue"
+              />
+              <SeeAlso
+                title="Based on your skills"
+                listOfJobs={basedOnCareer}
+                color="darkblue"
+              />
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </>
+  );
 }
-
-export default HomePage
