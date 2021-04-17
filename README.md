@@ -1,27 +1,12 @@
 # README
 
-The code is for Iramai website redesign, including following parts:
+This is just a symple example of componentization of a webpage using react and next.
 
-1. pages/index.js (home page), pages/faq.js (FAQ page), pages/policy (Public Policy page) and tos.js(Terms of Service Page)
-2. pages/jobs/[id.js, which is for all jobs that will be dynamically generated from DB.
-3. pages/job, (to be build), which is a general job page that introduce all jobs based on skills, levels, etc.
-4. pages/api/sitemap.js, which is used to generate sitemap.xml for SEO purpose.
+The idea is to show that if you design your components right a web designer will have the tools needed to build a very
+good site withou no need of programming knowledge. Once the webdesigner understands what data comes with each
+component, and how adjustable those components are, it´s just a matter of a Lego brick play.
 
-The code is based on NextJS as SSR (using static rendering) and use graphql to fetch data from Iramai CMS
+For teaching purposes, the data is stored directly into internal variables. Next versions will show how to wraparound
+some of those components into more complex ones able to retrieve data from a MongoDB.
 
-To run nextJS, you need to have node installed (10.13 or later)
-
-For local running, checkout the code and run:
-npm run dev
-and then visit: [http://localhost:3000]
-
-The data will come from Iramai CMS site, the staging area is at [https://cms-staging.turing.com/]
-Content team can edit information in CMS and we use graphql to fetch data.
-For example, if content Timestamp set job data with
-job title: remote-backend-job
-job content: some remote backend job content,
-it will generate a dynamic url with [http://localhost:3000/remote-backend-job]
-
-For nextJS, take a look at tutorial at: [https://nextjs.org/learn/basics/create-nextjs-app]
-
-The sitemap can be accessed from [http://localhost:3000/sitemap.xml]
+The current version can be seen running at [https://iramai-page-demo.vercel.app/]
