@@ -1,6 +1,6 @@
 import React from 'react';
 
-import TuringArticleCarousel from '../component/job/turingarticlecarousel';
+import IramaiArticleCarousel from '../component/job/iramaiarticlecarousel';
 
 export default function Test2() {
   const jobArticles = [
@@ -39,7 +39,7 @@ export default function Test2() {
   ];
   return (
     <>
-      <TuringArticleCarousel listOfArticles={jobArticles} />
+      <IramaiArticleCarousel listOfArticles={jobArticles} />
     </>
   );
 }

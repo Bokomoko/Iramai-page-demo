@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Figure from 'react-bootstrap/Figure';
-import styles from './turingarticlecarousel.module.css';
+import styles from './iramaiarticlecarousel.module.css';
 
-export default function TuringArticleCarousel(props) {
+export default function IramaiArticleCarousel(props) {
   const { listOfArticles } = props;
 
   const [index, setIndex] = useState(0);
@@ -20,19 +20,19 @@ export default function TuringArticleCarousel(props) {
     );
   });
 
-  const turingNextArrow = (
+  const iramaiNextArrow = (
     <span aria-hidden={true} className={styles.carouselarrow}>
       ❯
     </span>
   );
 
-  const turingPreviousArrow = (
+  const iramaiPreviousArrow = (
     <span aria-hidden={true} className={styles.carouselarrow}>
       ❮
     </span>
   );
   return (
-    <div className={styles.turingcarousel}>
+    <div className={styles.iramaicarousel}>
       <Carousel
         controls={true}
         indicators={true}
@@ -40,8 +40,8 @@ export default function TuringArticleCarousel(props) {
         activeIndex={index}
         interval={15000}
         onSelect={handleSelect}
-        nextIcon={turingNextArrow}
-        prevIcon={turingPreviousArrow}
+        nextIcon={iramaiNextArrow}
+        prevIcon={iramaiPreviousArrow}
         fade={true}
         slide={false}
       >

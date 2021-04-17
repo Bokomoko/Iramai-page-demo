@@ -20,9 +20,9 @@ function JobSubContent () {
                 </div>
                 <p className={styles.description}>
                     "I have previously worked at oDesk and Elance (now popularly known as Upwork) for more than 5 years,
-                    but the pivotal moment in my career came when I joined the global team of Turing remote engineers in
+                    but the pivotal moment in my career came when I joined the global team of Iramai remote engineers in
                     2020. I did not imagine that the jobs I was offered would come with such stability and prominence.
-                    Apply to be one among many Turing developers. It will change your life, like it did mine!"
+                    Apply to be one among many Iramai developers. It will change your life, like it did mine!"
                 </p>
             </section>
             <h3 className={styles.open_job_title}>Check our open jobs</h3>

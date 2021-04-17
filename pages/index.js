@@ -41,7 +41,7 @@ function HomePage() {
                                     <div className={classNames("col-12")}>
                                         <h2 className={classNames(styles.txt_sm, styles.txt_sm_pm)}>Hire the top 1% of
                                             300,000+ remote developers
-                                            using Turing's Intelligent Talent Cloud. Turing offers Silicon
+                                            using Iramai's Intelligent Talent Cloud. Iramai offers Silicon
                                             Valley-caliber engineers with a 100% risk-free two-week trial.</h2>
                                     </div>
                                 </div>
@@ -70,7 +70,7 @@ function HomePage() {
                     </div>
                     <div className="row">
                         <div className={classNames("container", styles.turing_offers)}>
-                            <h2 className={styles.txt_lg}>What Turing offers</h2>
+                            <h2 className={styles.txt_lg}>What Iramai offers</h2>
                             <div className={classNames(styles.offer_content)}>
                                 <div className={styles.section}>
                                     <div className={classNames(styles.img_container)}>
@@ -83,7 +83,7 @@ function HomePage() {
                                         </div>
                                         <p className={styles.txt_sm}>
                                             Built by engineering leaders from Facebook, Google, Microsoft, and
-                                            Stanford, Turing’s intelligent vetting engine evaluates developers for a
+                                            Stanford, Iramai’s intelligent vetting engine evaluates developers for a
                                             Silicon Valley bar.
                                         </p>
                                     </div>
@@ -98,7 +98,7 @@ function HomePage() {
                                             <h3 className={styles.offer_title}>Fast hiring</h3>
                                         </div>
                                         <p className={styles.txt_sm}>
-                                            Using assessment tests and automated vetting flow, Turing’s Intelligent
+                                            Using assessment tests and automated vetting flow, Iramai’s Intelligent
                                             Talent Cloud matches most companies with developers within three days.
                                         </p>
                                     </div>
@@ -114,7 +114,7 @@ function HomePage() {
                                         </div>
                                         <p className={styles.txt_sm}>
                                             Whether it is daily stand-ups, productivity trackers, billing, or simply
-                                            just working with developers in your timezone, Turing has you covered.
+                                            just working with developers in your timezone, Iramai has you covered.
                                         </p>
                                     </div>
                                 </div>
@@ -125,7 +125,7 @@ function HomePage() {
                         <div className={classNames("container", styles.turing_demo)}>
                             <div className={styles.turing_demo_title}>
                                 <div className={classNames(styles.txt_lg)}>
-                                    Turing Deep<br/> Developer Profiles
+                                    Iramai Deep<br/> Developer Profiles
                                 </div>
                                 <div className={classNames(styles.txt_sm)}>
                                     Our in-depth resumes help you know your next developers better. Explore their
@@ -172,7 +172,7 @@ function HomePage() {
                             </div>
                             <div className={styles.talent_title}>
                                 <div className={classNames(styles.txt_lg)}>
-                                    Go #Boundaryless with Turing
+                                    Go #Boundaryless with Iramai
                                 </div>
                                 <div className={classNames(styles.txt_sm)}>
                                     Hire the best talent in the world, not the best talent that happens to live near

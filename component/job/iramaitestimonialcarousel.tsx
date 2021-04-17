@@ -7,9 +7,9 @@ interface Testimonial {
 }
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import styles from './turingtestimonialcarousel.module.css';
+import styles from './iramaitestimonialcarousel.module.css';
 
-export default function TuringTestimonialCarousel(props) {
+export default function IramaiTestimonialCarousel(props) {
   const [index, setIndex] = useState(0);
   const { listOfTestimonials } = props;
 
@@ -17,13 +17,13 @@ export default function TuringTestimonialCarousel(props) {
     setIndex(selectedIndex);
   };
 
-  const turingNextArrow = (
+  const iramaiNextArrow = (
     <span aria-hidden={true} className={styles.carouselarrow}>
       ❯
     </span>
   );
 
-  const turingPreviousArrow = (
+  const iramaiPreviousArrow = (
     <span aria-hidden={true} className={styles.carouselarrow}>
       ❮
     </span>
@@ -55,8 +55,8 @@ export default function TuringTestimonialCarousel(props) {
         activeIndex={index}
         interval={3000}
         onSelect={handleSelect}
-        nextIcon={turingNextArrow}
-        prevIcon={turingPreviousArrow}
+        nextIcon={iramaiNextArrow}
+        prevIcon={iramaiPreviousArrow}
         fade={true}
         slide={false}
       >

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import WhyJoinTuring from '../component/job/whyjointuring';
+import WhyJoinIramai from '../component/job/whyjoiniramai';
 
 export default function Test4() {
   const listOfReasons = [
@@ -31,7 +31,7 @@ export default function Test4() {
   ];
   return (
     <>
-      <WhyJoinTuring reasons={listOfReasons} />
+      <WhyJoinIramai reasons={listOfReasons} />
     </>
   );
 }

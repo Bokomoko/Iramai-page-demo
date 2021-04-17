@@ -10,6 +10,7 @@ export default function VideoBox(props) {
       <p>{devJob}</p>
       <q>{devQuote}</q>
       <iframe
+        className={styles.videobox}
         width="560"
         height="315"
         src={devVideoLink}
@@ -29,3 +30,8 @@ export default function VideoBox(props) {
     </div>
   );
 }
+
+/*
+     <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+*/

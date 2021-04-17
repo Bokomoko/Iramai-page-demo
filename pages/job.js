@@ -1,11 +1,11 @@
-import Layout from '../component/layout'
+import Layout from '../component/layout';
 
 function PrivatePolicy() {
   return (
     <Layout>
-      <div>Turing general job page</div>
+      <div>Iramai general job page</div>
     </Layout>
-  )
+  );
 }
 
-export default PrivatePolicy
+export default PrivatePolicy;

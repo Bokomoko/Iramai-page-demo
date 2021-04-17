@@ -5,13 +5,13 @@ import Container from "react-bootstrap/Container";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-function TuringProcess() {
+function IramaiProcess() {
     return (
         <div className={styles.main}>
             <Container>
                 <section>
                     <div className="py-5">
-                        <h4>What's the process like at Turing?</h4>
+                        <h4>What's the process like at Iramai?</h4>
                     </div>
                     <div className="d-md-flex align-items-stretch">
                         <div className="col-4">
@@ -23,7 +23,7 @@ function TuringProcess() {
                                 </li>
                                 <li>
                                     <div className={classNames(styles.number_circle, styles.number_default)}>2</div>
-                                    <h6 className={styles.title}>Take Turing Tests <br/>& Interviews</h6>
+                                    <h6 className={styles.title}>Take Iramai Tests <br/>& Interviews</h6>
                                 </li>
                                 <li>
                                     <div className={classNames(styles.number_circle, styles.number_default)}>3</div>
@@ -31,7 +31,7 @@ function TuringProcess() {
                                 </li>
                                 <li>
                                     <div className={classNames(styles.number_circle, styles.number_default)}>4</div>
-                                    <h6 className={styles.title}>Start working with <br/>a U.S company</h6>
+                                    <h6 className={styles.title}>Start working with <br/>a Terran company</h6>
                                 </li>
                             </ul>
                         </div>
@@ -51,6 +51,6 @@ function TuringProcess() {
         </div>)
 }
 
-export default TuringProcess
+export default IramaiProcess
 
 

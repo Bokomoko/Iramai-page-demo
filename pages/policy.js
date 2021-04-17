@@ -27,21 +27,21 @@ function PrivatePolicy() {
                                     <article>
                                         <h2 className={styles.title_1}>Introduction</h2>
                                         <p className={styles.txt1}>Welcome to the privacy policy (the “Policy”) of
-                                            Turing
+                                            Iramai
                                             Enterprises Inc. (“we”, “us” and/or “our”). This Policy has been created
                                             by
-                                            Turing Enterprises (“Turing”), Inc. to provide information about Turing
+                                            Iramai Enterprises (“Iramai”), Inc. to provide information about Iramai
                                             Enterprises Inc. time tracker software and related services (the
                                             “Service”) to
                                             our users (“you”, “your”).</p>
-                                        <p className={styles.txt1}>This Privacy Policy sets forth Turing Enterprises
+                                        <p className={styles.txt1}>This Privacy Policy sets forth Iramai Enterprises
                                             Inc.’s policy
                                             with respect to information, including personally identifiable data
                                             (“Personal
                                             Data”), and other information that is collected from users of the
                                             Service.</p>
                                         <p className={styles.txt1}>Your access to and use of the Service is subject
-                                            to Turing
+                                            to Iramai
                                             Enterprises Inc.’s Terms and Conditions.</p>
                                     </article>
                                 </div>
@@ -54,13 +54,13 @@ function PrivatePolicy() {
                                 <div className="column animated fadeInUp animElem-6">
                                     <article>
                                         <h2 className={styles.title_1}>Scope</h2>
-                                        <p className={styles.txt1}>This Privacy Policy sets out how Turing
+                                        <p className={styles.txt1}>This Privacy Policy sets out how Iramai
                                             Enterprises Inc.
                                             collects, retains, and uses information, including personal data
                                             (“Personal
                                             Data”) and non-identifiable data, about Service users. This Privacy
                                             Policy also
-                                            covers data that Turing Enterprises Inc. collects in-person, for
+                                            covers data that Iramai Enterprises Inc. collects in-person, for
                                             instance at
                                             business conferences and trade shows, or through client support.</p>
                                         <p className={styles.txt1}>When you interact with us through the Service, we
@@ -90,15 +90,15 @@ function PrivatePolicy() {
                                                     support), when
                                                     you voluntarily provide such information such as when you
                                                     register for
-                                                    access to the Turing Enterprises Inc. Service (account level
+                                                    access to the Iramai Enterprises Inc. Service (account level
                                                     data
                                                     including your name, email, and password), contact us with
                                                     inquiries or
                                                     respond to one of our surveys.</p>
-                                                <p className={styles.txt1}>Wherever Turing Enterprises Inc. collects
+                                                <p className={styles.txt1}>Wherever Iramai Enterprises Inc. collects
                                                     Personal Data
                                                     we make an effort to provide a link to this Privacy Policy.</p>
-                                                <p className={styles.txt1}>When you interact with Turing Enterprises
+                                                <p className={styles.txt1}>When you interact with Iramai Enterprises
                                                     Inc. through
                                                     the services, we collect automatically certain information,
                                                     including
@@ -138,7 +138,7 @@ function PrivatePolicy() {
                                                             Respond To
                                                             Requests
                                                         </div>
-                                                        <p className={styles.txt1}>Turing Enterprises Inc. uses the
+                                                        <p className={styles.txt1}>Iramai Enterprises Inc. uses the
                                                             Personal Data
                                                             you provide in a manner that is consistent with this
                                                             Privacy
@@ -314,7 +314,7 @@ function PrivatePolicy() {
                                                                     the “EU Individuals” section below for
                                                                     information on
                                                                     our legitimate interests and your rights.
-                                                                    If Turing Enterprises Inc. intends on using any
+                                                                    If Iramai Enterprises Inc. intends on using any
                                                                     Personal
                                                                     Data in any manner that is not consistent with
                                                                     this
@@ -341,16 +341,16 @@ function PrivatePolicy() {
                                 <div className="column animated fadeInUp animElem-6">
                                     <article>
                                         <h2 className={styles.title_1}>Non-Identifiable or Aggregated Data</h2>
-                                        <p className={styles.txt1}>When you interact with Turing Enterprises Inc.
+                                        <p className={styles.txt1}>When you interact with Iramai Enterprises Inc.
                                             through the
                                             Service, we receive and store certain personally non-identifiable
                                             information.
                                             Such information, which is collected passively using various
                                             technologies,
-                                            cannot presently be used to specifically identify you. Turing
+                                            cannot presently be used to specifically identify you. Iramai
                                             Enterprises Inc.
                                             may store such information itself or such information may be included in
-                                            databases owned and maintained by Turing Enterprises Inc. affiliates,
+                                            databases owned and maintained by Iramai Enterprises Inc. affiliates,
                                             agents or
                                             service providers. This Service may use such information and pool it
                                             with other
@@ -360,18 +360,18 @@ function PrivatePolicy() {
                                             how our
                                             users use and interact with the Service. Also, in an ongoing effort to
                                             better
-                                            understand and serve the users of the Service, Turing Enterprises Inc.
+                                            understand and serve the users of the Service, Iramai Enterprises Inc.
                                             often
                                             conducts research on its customer demographics, interests and behavior
                                             based on
                                             the Personal Data and other information provided to us. This research
                                             may be
-                                            compiled and analyzed on an aggregate basis. Turing Enterprises Inc. may
+                                            compiled and analyzed on an aggregate basis. Iramai Enterprises Inc. may
                                             share
                                             this non-identifiable and aggregate data with its affiliates, agents and
                                             business partners, but this type of non-identifiable and aggregate
                                             information
-                                            does not identify you personally. Turing Enterprises Inc. may also
+                                            does not identify you personally. Iramai Enterprises Inc. may also
                                             disclose
                                             aggregated user statistics in order to describe our Service to current
                                             and
@@ -389,11 +389,11 @@ function PrivatePolicy() {
                                 <div className="column animated fadeInUp animElem-6">
                                     <article>
                                         <h2 className={styles.title_1}>Information Collected</h2>
-                                        <p className={styles.txt1}>Wherever Turing Enterprises Inc. collects
+                                        <p className={styles.txt1}>Wherever Iramai Enterprises Inc. collects
                                             Personal Data we make
                                             an effort to provide a link to this Privacy Policy. In addition, and
                                             without
-                                            limiting the disclosures herein, Turing Enterprises Inc. may receive,
+                                            limiting the disclosures herein, Iramai Enterprises Inc. may receive,
                                             store or
                                             otherwise use your Personal Data, including your activity usage as an
                                             individual
@@ -409,7 +409,7 @@ function PrivatePolicy() {
                                             PROVIDE PERSONAL DATA, YOU ACKNOWLEDGE AND AGREE THAT SUCH PERSONAL DATA
                                             MAY BE
                                             TRANSFERRED FROM YOUR CURRENT LOCATION TO THE OFFICES AND SERVERS OF
-                                            Turing
+                                            Iramai
                                             Enterprises Inc. AND THE AUTHORIZED THIRD PARTIES REFERRED TO HEREIN
                                             LOCATED IN
                                             THE UNITED STATES.</p>
@@ -427,7 +427,7 @@ function PrivatePolicy() {
                                         <h2 className={styles.title_1}>Our Disclosure of Your Personal Data and
                                             Other
                                             Information</h2>
-                                        <p className={styles.txt1}>Turing Enterprises Inc. is not in the business of
+                                        <p className={styles.txt1}>Iramai Enterprises Inc. is not in the business of
                                             selling your
                                             information. We consider this information to be a vital part of our
                                             relationship
@@ -455,7 +455,7 @@ function PrivatePolicy() {
                                         <p className={styles.txt1}>
                                             <strong>Agents, Consultants and Related Third Parties</strong>
                                             <br/>
-                                            Turing Enterprises Inc., like many businesses, sometimes hires other
+                                            Iramai Enterprises Inc., like many businesses, sometimes hires other
                                             companies
                                             to perform certain business-related functions. Examples of such
                                             functions
@@ -470,12 +470,12 @@ function PrivatePolicy() {
                                         <p className={styles.txt1}>
                                             <strong>Legal Requirements</strong>
                                             <br/>
-                                            Turing Enterprises Inc. may disclose your Personal Data if required to
+                                            Iramai Enterprises Inc. may disclose your Personal Data if required to
                                             do so by
                                             law or in the good faith belief that such action is necessary to (i)
                                             comply with
                                             a legal obligation, (ii) protect and defend the rights or property of
-                                            Turing,
+                                            Iramai,
                                             (iii) act in urgent circumstances to protect the personal safety of
                                             users of the
                                             Service or the public, or (iv) protect against legal liability.
@@ -500,7 +500,7 @@ function PrivatePolicy() {
                                             of
                                             Iceland, Liechtenstein and Norway and, where applicable, Switzerland).
                                             Our
-                                            Privacy Policy describes why and how Turing Enterprises Inc. collects,
+                                            Privacy Policy describes why and how Iramai Enterprises Inc. collects,
                                             uses and
                                             stores your Personal Data, the lawful basis on which your Personal Data
                                             is
@@ -511,11 +511,11 @@ function PrivatePolicy() {
                                         <p className={styles.txt1}>
                                             <strong>Data Controller</strong>
                                             <br/>
-                                            Turing Enterprises Inc. is the data controller for processing your
+                                            Iramai Enterprises Inc. is the data controller for processing your
                                             Personal
                                             Data. The data controller is responsible for deciding how Personal Data
                                             about
-                                            you is used. Please see the “Contacting Turing” section below to find
+                                            you is used. Please see the “Contacting Iramai” section below to find
                                             out how to
                                             contact us, which also provides the contact details of our
                                             representative in the
@@ -679,7 +679,7 @@ function PrivatePolicy() {
                                     <article>
                                         <h2 className={styles.title_1}>You may exercise your rights by contacting us
                                             as indicated
-                                            under “Contacting Turing” section below</h2>
+                                            under “Contacting Iramai” section below</h2>
                                         <p className={styles.txt1}>
                                             <strong>Legitimate Interest</strong>
                                             <br/>
@@ -702,7 +702,7 @@ function PrivatePolicy() {
                                         <p className={styles.txt1}>
                                             <strong>Data Transfers</strong>
                                             <br/>
-                                            Turing is based in the United States. When you apply as an Engineer or
+                                            Iramai is based in the United States. When you apply as an Engineer or
                                             use our
                                             services as a Client, or otherwise use our Service, your Personal Data
                                             will be
@@ -781,18 +781,18 @@ function PrivatePolicy() {
                                         <h2 className={styles.title_1}>Exclusions</h2>
                                         <p className={styles.txt1}>This Privacy Policy does not apply to any
                                             Personal Data
-                                            collected by Turing Enterprises Inc. other than Personal Data collected
+                                            collected by Iramai Enterprises Inc. other than Personal Data collected
                                             through
                                             the Service. This Privacy Policy shall not apply to any unsolicited
                                             information
-                                            you provide to Turing through this Service or through any other means.
+                                            you provide to Iramai through this Service or through any other means.
                                             This
                                             includes, but is not limited to any ideas for new products or
                                             modifications to
                                             existing products, and other unsolicited submissions (collectively,
                                             “Unsolicited
                                             Information”). All Unsolicited Information shall be deemed to be
-                                            non-confidential and Turing Enterprises Inc. shall be free to reproduce,
+                                            non-confidential and Iramai Enterprises Inc. shall be free to reproduce,
                                             use,
                                             disclose, distribute and exploit such Unsolicited Information without
                                             limitation
@@ -808,7 +808,7 @@ function PrivatePolicy() {
                                 <div className="column animated fadeInUp animElem-6">
                                     <article>
                                         <h2 className={styles.title_1}>Children</h2>
-                                        <p className={styles.txt1}>Turing Enterprises Inc. does not knowingly
+                                        <p className={styles.txt1}>Iramai Enterprises Inc. does not knowingly
                                             collect Personal
                                             Data from children under the age of 13. If you are under the age of 13,
                                             please
@@ -820,7 +820,7 @@ function PrivatePolicy() {
                                             Personal Data
                                             on this Service without their permission. If you have reason to believe
                                             that a
-                                            child under the age of 13 has provided Personal Data to Turing
+                                            child under the age of 13 has provided Personal Data to Iramai
                                             Enterprises Inc.
                                             through the Service, please contact us, and we will endeavor to delete
                                             that
@@ -836,7 +836,7 @@ function PrivatePolicy() {
                                 <div className="column animated fadeInUp animElem-6">
                                     <article>
                                         <h2 className={styles.title_1}>Security</h2>
-                                        <p className={styles.txt1}>Turing Enterprises Inc. takes reasonable steps to
+                                        <p className={styles.txt1}>Iramai Enterprises Inc. takes reasonable steps to
                                             protect the
                                             Personal Data provided via the Service from loss, misuse, and
                                             unauthorized
@@ -856,13 +856,13 @@ function PrivatePolicy() {
                             <div className={styles.grid}>
                                 <div className="column animated fadeInUp animElem-6">
                                     <article>
-                                        <h2 className={styles.title_1}>Changes to Turing Enterprises Inc.’s Privacy
+                                        <h2 className={styles.title_1}>Changes to Iramai Enterprises Inc.’s Privacy
                                             Policy</h2>
                                         <p className={styles.txt1}>The Service and our business may change from time
                                             to time. As a
-                                            result, at times it may be necessary for Turing Enterprises Inc. to make
+                                            result, at times it may be necessary for Iramai Enterprises Inc. to make
                                             changes
-                                            to this Privacy Policy. Turing Enterprises Inc. reserves the right to
+                                            to this Privacy Policy. Iramai Enterprises Inc. reserves the right to
                                             update or
                                             modify this Privacy Policy at any time and from time to time without
                                             prior
@@ -884,9 +884,9 @@ function PrivatePolicy() {
                             <div className={styles.grid}>
                                 <div className="column animated fadeInUp animElem-6">
                                     <article>
-                                        <h2 className={styles.title_1}>Contacting Turing Enterprises Inc.</h2>
+                                        <h2 className={styles.title_1}>Contacting Iramai Enterprises Inc.</h2>
                                         <p className={styles.txt1}>Please contact us if you have any questions about
-                                            Turing
+                                            Iramai
                                             Enterprises Inc.’s Privacy Policy or the information practices of this
                                             Service.</p>
                                     </article>
@@ -902,9 +902,9 @@ function PrivatePolicy() {
                                         <p className={styles.txt1}>You may contact us as follows: by email at
                                             partnerships@turing.com, or by post at:</p>
                                         <p className={styles.txt1}>
-                                            Turing Enterprises, Inc.
+                                            Iramai Enterprises, Inc.
                                             <br/>
-                                            Attention: Turing Enterprises Inc. Privacy Policy Query
+                                            Attention: Iramai Enterprises Inc. Privacy Policy Query
                                             <br/>
                                             1900 Embarcadero Rd. #104
                                             <br/>

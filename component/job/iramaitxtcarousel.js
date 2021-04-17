@@ -7,7 +7,7 @@ import {
   CarouselCaption,
 } from 'reactstrap';
 
-export default function TuringTxtCarousel(props) {
+export default function IramaiTxtCarousel(props) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 

@@ -20,7 +20,7 @@ function PrivatePolicy() {
                     <div className="column right animated fadeInRight animElem-4">
                         <p className={styles.txt1}>Last updated: October 04, 2019</p>
                         <p className={styles.txt1}>Please read these Terms of Service ("Terms", "Terms of Service")
-                            carefully before using the https://turing.com/ website (the "Service") operated by Turing
+                            carefully before using the https://turing.com/ website (the "Service") operated by Iramai
                             Enterprises Inc. ("us", "we", or "our").
                         </p>
                         <p className={styles.txt1}>
@@ -59,7 +59,7 @@ function PrivatePolicy() {
                                             Intellectual Property
                                         </h2>
                                         <p className={styles.txt1}>
-                                            The Service and its original content, features and functionality are and will remain the exclusive property of Turing Enterprises Inc. and its licensors. The Service is protected by copyright, trademark, and other laws of both the United States and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Turing Enterprises Inc.
+                                            The Service and its original content, features and functionality are and will remain the exclusive property of Iramai Enterprises Inc. and its licensors. The Service is protected by copyright, trademark, and other laws of both the United States and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Iramai Enterprises Inc.
                                         </p>
                                     </article>
                                 </div>
@@ -73,13 +73,13 @@ function PrivatePolicy() {
                                     <article>
                                         <h2 className={styles.title_1}>Links To Other Web Sites</h2>
                                         <p className={styles.txt1}>
-                                            Our Service may contain links to third party web sites or services that are not owned or controlled by Turing Enterprises Inc.
+                                            Our Service may contain links to third party web sites or services that are not owned or controlled by Iramai Enterprises Inc.
                                         </p>
                                         <p className={styles.txt1}>
-                                            Turing Enterprises Inc. has no control over, and assumes no responsibility for the content, privacy policies, or practices of any third party web sites or services. We do not warrant the offerings of any of these entities/individuals or their websites.
+                                            Iramai Enterprises Inc. has no control over, and assumes no responsibility for the content, privacy policies, or practices of any third party web sites or services. We do not warrant the offerings of any of these entities/individuals or their websites.
                                         </p>
                                         <p className={styles.txt1}>
-                                            You acknowledge and agree that Turing Enterprises Inc. shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such third party web sites or services.
+                                            You acknowledge and agree that Iramai Enterprises Inc. shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such third party web sites or services.
                                         </p>
                                         <p className={styles.txt1}>
                                             We strongly advise you to read the terms and conditions and privacy policies of any third party web sites or services that you visit.
@@ -116,7 +116,7 @@ function PrivatePolicy() {
                                     <article>
                                         <h2 className={styles.title_1}>Indemnification</h2>
                                         <p className={styles.txt1}>
-                                            You agree to defend, indemnify and hold harmless Turing Enterprises Inc. and its licensee and licensors, and their employees, contractors, agents, officers and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees), resulting from or arising out of a) your use and access of the Service, by you or any person using your account and password, or b) a breach of these Terms.
+                                            You agree to defend, indemnify and hold harmless Iramai Enterprises Inc. and its licensee and licensors, and their employees, contractors, agents, officers and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees), resulting from or arising out of a) your use and access of the Service, by you or any person using your account and password, or b) a breach of these Terms.
                                         </p>
                                     </article>
                                 </div>
@@ -131,7 +131,7 @@ function PrivatePolicy() {
                                     <article>
                                         <h2 className={styles.title_1}>Limitation Of Liability</h2>
                                         <p className={styles.txt1}>
-                                            In no event shall Turing Enterprises Inc., nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Service; (ii) any conduct or content of any third party on the Service; (iii) any content obtained from the Service; and (iv) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.
+                                            In no event shall Iramai Enterprises Inc., nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Service; (ii) any conduct or content of any third party on the Service; (iii) any content obtained from the Service; and (iv) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.
                                         </p>
                                     </article>
                                 </div>
@@ -149,7 +149,7 @@ function PrivatePolicy() {
                                             Your use of the Service is at your sole risk. The Service is provided on an "AS IS" and "AS AVAILABLE" basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance.
                                         </p>
                                         <p className={styles.txt1}>
-                                            Turing Enterprises Inc. its subsidiaries, affiliates, and its licensors do not warrant that a) the Service will function uninterrupted, secure or available at any particular time or location; b) any errors or defects will be corrected; c) the Service is free of viruses or other harmful components; or d) the results of using the Service will meet your requirements.
+                                            Iramai Enterprises Inc. its subsidiaries, affiliates, and its licensors do not warrant that a) the Service will function uninterrupted, secure or available at any particular time or location; b) any errors or defects will be corrected; c) the Service is free of viruses or other harmful components; or d) the results of using the Service will meet your requirements.
                                         </p>
                                     </article>
                                 </div>
@@ -217,7 +217,7 @@ function PrivatePolicy() {
                                         <h2 className={styles.title_1}>Contact Us</h2>
                                         <p className={styles.txt1}>
                                             If you have any questions about these Terms, please
-                                            <a href="mailto:partnerships@turing.com?subject=Turing Terms of Service"
+                                            <a href="mailto:partnerships@turing.com?subject=Iramai Terms of Service"
                                                className="hyperlink"> contact us</a>
                                         </p>
                                     </article>

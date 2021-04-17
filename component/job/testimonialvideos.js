@@ -6,9 +6,9 @@ export default function TestimonialVideos(props) {
 
   return (
     <div className={styles.videobox}>
-      <h3 className={styles.developerslove}>Developers ❤ Turing</h3>
+      <h3 className={styles.developerslove}>Developers ❤ Iramai</h3>
       <p>
-        See what accomplished Turing developers have to say about working with
+        See what accomplished Iramai developers have to say about working with
         top U.S. clients
       </p>
     </div>

@@ -22,25 +22,25 @@ function HirePage() {
         setArticle([
             {
                 image: '/assets/article.png',
-                article_title: 'Turing nabs $32M more for an AI-based platform to source and manage engineers remotely',
+                article_title: 'Iramai nabs $32M more for an AI-based platform to source and manage engineers remotely',
                 article_description: 'As remote work continues to solidify its place as a critical aspect of how businesses exist these days, a startup...',
                 url: ''
             },
             {
                 image: '/assets/article.png',
-                article_title: 'Turing nabs $32M more for an AI-based platform to source and manage engineers remotely',
+                article_title: 'Iramai nabs $32M more for an AI-based platform to source and manage engineers remotely',
                 article_description: 'As remote work continues to solidify its place as a critical aspect of how businesses exist these days, a startup...',
                 url: ''
             },
             {
                 image: '/assets/article.png',
-                article_title: 'Turing nabs $32M more for an AI-based platform to source and manage engineers remotely',
+                article_title: 'Iramai nabs $32M more for an AI-based platform to source and manage engineers remotely',
                 article_description: 'As remote work continues to solidify its place as a critical aspect of how businesses exist these days, a startup...',
                 url: ''
             },
             {
                 image: '/assets/article.png',
-                article_title: 'Turing nabs $32M more for an AI-based platform to source and manage engineers remotely',
+                article_title: 'Iramai nabs $32M more for an AI-based platform to source and manage engineers remotely',
                 article_description: 'As remote work continues to solidify its place as a critical aspect of how businesses exist these days, a startup...',
                 url: ''
             }
@@ -125,7 +125,7 @@ function HirePage() {
                                     caliber at half the cost
                                 </div>
                                 <div className={classNames(styles.txt_sm, "p-2")}>Hire the top 1% of 300,000 engineers
-                                    who have applied to Turing.
+                                    who have applied to Iramai.
                                 </div>
 
                                 <div className={classNames(styles.txt_sm, "font-weight-light", "p-2")}>100+ skills
@@ -193,7 +193,7 @@ function HirePage() {
                                     timezone
                                 </div>
                                 <div className={classNames(styles.txt_sm, "p-2")}>
-                                    Turing developers match your timezone and overlap a minimum of 4 hours with your
+                                    Iramai developers match your timezone and overlap a minimum of 4 hours with your
                                     workday.
                                 </div>
 
@@ -212,7 +212,7 @@ function HirePage() {
                     <div className={classNames(styles.for_company, styles.introduce, styles.padding_100)}>
                         <div className={classNames(styles.developer)}>
                             <div className={classNames(styles.txt_md, "txt_bold", "p-2", styles.title_page)}>
-                                Turing Deep Developer Profiles
+                                Iramai Deep Developer Profiles
                             </div>
                             <div className={classNames(styles.txt_sm, "p-2")}>
                                 Our in-depth resumes help you know your next developers better. Explore their strengths
@@ -225,7 +225,7 @@ function HirePage() {
                                 vetting
                             </div>
                             <div className={classNames(styles.txt_sm, "p-2")}>
-                                Turing has created the first and only Intelligent Talent Cloud using machine learning to
+                                Iramai has created the first and only Intelligent Talent Cloud using machine learning to
                                 actively vet developers to a Silicon Valley bar. We vet developers based upon actual
                                 skills
                                 vs. self-reported experience from traditional resumes or job interviews.
@@ -235,7 +235,7 @@ function HirePage() {
                                 8 hours of tests + interviews
                             </div>
                             <div className={classNames(styles.txt_sm, "p-2")}>
-                                More rigorous than Bay Area job interviews. Turing tests for programming languages, data
+                                More rigorous than Bay Area job interviews. Iramai tests for programming languages, data
                                 structures, algorithms, system designs, software specialization, frameworks, and more.
                             </div>
 
@@ -243,14 +243,14 @@ function HirePage() {
                                 tests
                             </div>
                             <div className={classNames(styles.txt_sm, "p-2")}>
-                                Every Turing developer goes through our automated seniority assessment test comprising
+                                Every Iramai developer goes through our automated seniority assessment test comprising
                                 57
                                 calibrated questions in 5 areas: project impact, engineering excellence, communication,
                                 people, and direction.
                             </div>
 
                         </div>
-                        <div className={styles.turing_demo_developer}>
+                        <div className={styles.Iramai_demo_developer}>
                             <DeveloperProfiles avatar={developer.avatar}
                                                name={developer.name}
                                                position={developer.position}
@@ -265,7 +265,7 @@ function HirePage() {
                     <div className="row">
                         <div className={styles.hire_info}>
                             <div className={classNames(styles.txt_md, "font-weight-light")}>How to hire top remote
-                                developers through Turing?
+                                developers through Iramai?
                             </div>
                             <div className={styles.info}>
                                 <div className={styles.info_col}>
@@ -311,21 +311,21 @@ function HirePage() {
                     <div className="row">
                         <div className={classNames(styles.hire_info, styles.gray, "container")}>
                             <div className={styles.header}>
-                                <p className={classNames(styles.txt_md, "font-weight-light")}>About Turing</p>
+                                <p className={classNames(styles.txt_md, "font-weight-light")}>About Iramai</p>
                             </div>
                             <div className={styles.for_company}>
                                 <div className={styles.col1}>
                                     <div className={classNames(styles.txt_sm, "font-weight-light")}>Stanford founders</div>
                                     <div className={classNames(styles.txt_sm, styles.padding_content)}>
                                         Founded by Stanford Computer Science alumni, Jonathan Siddharth and Vijay
-                                        Krishnan, Turing was created after the successful acquisition of their last AI
+                                        Krishnan, Iramai was created after the successful acquisition of their last AI
                                         company built with exceptional remote engineers.
                                     </div>
                                 </div>
                                 <div className={styles.col1}>
                                     <div className={classNames(styles.txt_sm, "font-weight-light")}>Top investors</div>
                                     <div className={classNames(styles.txt_sm, styles.padding_content)}>
-                                        Turing is backed by well-known investors such WestBridge Capital, Foundation
+                                        Iramai is backed by well-known investors such WestBridge Capital, Foundation
                                         Capital, Altair Capital, Mindset Ventures, Frontier Ventures and Gaingels.
                                     </div>
                                 </div>
@@ -339,11 +339,11 @@ function HirePage() {
                                 <p className={classNames(styles.txt_md, "font-weight-light", styles.center)}>FAQs</p>
                             </div>
                             <div className={styles.col}>
-                                <div className={classNames(styles.txt_sm, styles.padding_content)}>What is the no-risk trial period for Turing developers?</div>
-                                <div className={classNames(styles.txt_sm, styles.padding_content)}>How are Turing developers different?</div>
-                                <div className={classNames(styles.txt_sm, styles.padding_content)}>How quickly can I hire top developers through Turing?</div>
-                                <div className={classNames(styles.txt_sm, styles.padding_content)}>How does Turing vet remote engineers?</div>
-                                <div className={classNames(styles.txt_sm, styles.padding_content)}>For which all skills can I hire remote developers from Turing?</div>
+                                <div className={classNames(styles.txt_sm, styles.padding_content)}>What is the no-risk trial period for Iramai developers?</div>
+                                <div className={classNames(styles.txt_sm, styles.padding_content)}>How are Iramai developers different?</div>
+                                <div className={classNames(styles.txt_sm, styles.padding_content)}>How quickly can I hire top developers through Iramai?</div>
+                                <div className={classNames(styles.txt_sm, styles.padding_content)}>How does Iramai vet remote engineers?</div>
+                                <div className={classNames(styles.txt_sm, styles.padding_content)}>For which all skills can I hire remote developers from Iramai?</div>
                             </div>
                             <Link href="/faq">View more FAQs</Link>
                         </div>
@@ -353,7 +353,7 @@ function HirePage() {
                         <div className={classNames(styles.col, "container", styles.padding_100)}>
                             <div>
                                 <p className={classNames(styles.txt_md, "font-weight-light", "p-2")}>
-                                    Latest posts from Turing
+                                    Latest posts from Iramai
                                 </p>
                             </div>
                             <div className={classNames(styles.for_company)}>

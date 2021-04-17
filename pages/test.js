@@ -5,16 +5,16 @@ import React from 'react';
 // standard libraries imports
 import Button from 'react-bootstrap/Button';
 
-// Turing react components
+// Iramai react components
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Cover from '../component/job/cover';
 import FancyList from '../component/job/fancylist';
-import TuringTestimonialCarousel from '../component/job/turingtestimonialcarousel.tsx';
+import IramaiTestimonialCarousel from '../component/job/iramaitestimonialcarousel.tsx';
 import TestimonialVideos from '../component/job/testimonialvideos.js';
 import SeeAlso from '../component/job/seealso';
-import WhyJoinTuring from '../component/job/whyjointuring';
+import WhyJoinIramai from '../component/job/whyjoiniramai';
 import styles from './test.module.css';
 
 // get data from API
@@ -63,10 +63,10 @@ export default function Test() {
       text: `
       I have previously worked at oDeks and Elance (now popularly known as Upwork)
       for more than 5 years, but the pivotal moment in my career came when i 
-      joined the global team of Turing remote engineers in 2020. 
+      joined the global team of Iramai remote engineers in 2020. 
       I did not imagine that the jobs I was offered would come with 
       such stability and prominence. 
-      Apply to be one of among many Turing developers. 
+      Apply to be one of among many Iramai developers. 
       It wil change your life, like it did mine!`,
     },
     {
@@ -75,7 +75,7 @@ export default function Test() {
       country: 'Kafiristan',
       jobTitle: 'Full Stack Dev',
       text:
-        'In Turing I´ve found purpose for my life. I didn´t walk quietly into that night',
+        'In Iramai I´ve found purpose for my life. I didn´t walk quietly into that night',
     },
     {
       image: 'https://randomuser.me/api/portraits/men/75.jpg',
@@ -94,7 +94,7 @@ export default function Test() {
     },
   ];
 
-  // load list articles about/from Turing in other sites
+  // load list articles about/from Iramai in other sites
   const jobArticles = [
     {
       quote:
@@ -150,7 +150,7 @@ export default function Test() {
     { jobTitle: 'Golang', jobPage: '#' },
   ];
 
-  // load list of reasons for working at Turing (I personnaly like them all)
+  // load list of reasons for working at Iramai (I personnaly like them all)
   const listOfReasons = [
     {
       title: 'Work from anywhere',
@@ -161,7 +161,7 @@ export default function Test() {
     {
       title: 'Better salary',
       text:
-        'Turing recommends compensation for developers that far exceed what they would make in their local economies.',
+        'Iramai recommends compensation for developers that far exceed what they would make in their local economies.',
       icon: './icons/dolarsign.svg',
     },
     {
@@ -188,7 +188,7 @@ export default function Test() {
             <Col>
               <Cover
                 cover_title="Remote React/Node Developer Jobs"
-                description="At Turing, we are looking for a Full Stack Developer specializing in React and Node.js who will be responsible for the entire web development process to deliver highly scalable, customer-centric, and performant web applications."
+                description="At Iramai, we are looking for a Full Stack Developer specializing in React and Node.js who will be responsible for the entire web development process to deliver highly scalable, customer-centric, and performant web applications."
                 cover_cta="Apply as React/Node Developer"
                 cta_url="page for applying to job"
                 image_cover="../../public/img/cover1.png"
@@ -216,7 +216,7 @@ export default function Test() {
             </Col>
             <Col>
               <div className={styles.rightcolumn}>
-                <TuringTestimonialCarousel listOfTestimonials={testmList} />
+                <IramaiTestimonialCarousel listOfTestimonials={testmList} />
                 <h3 className={styles.checkrelated}>Check Related Jobs</h3>
                 <SeeAlso
                   title="Based on your career trajectory"
@@ -241,7 +241,7 @@ export default function Test() {
           </Row>
           <Row>
             <Col className={styles.centercolumn}>
-              <WhyJoinTuring reasons={listOfReasons} />
+              <WhyJoinIramai reasons={listOfReasons} />
               <TestimonialVideos listOfVideos={'x'} />
               <h3 className={styles.checkrelated}>Check our Open Jobs</h3>
               <SeeAlso

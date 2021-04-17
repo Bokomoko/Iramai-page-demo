@@ -1,375 +1,375 @@
 .intro {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .container {
-    width: 100%;
+  width: 100%;
 }
 
 .for_company {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .padding_btn {
-    padding-top: 30px;
-    display: flex;
-    flex-direction: row;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
 }
 
 .box {
-    background: #FFFFFF 0 0 no-repeat padding-box;
-    box-shadow: 0 0 12px #0000000A;
-    border-radius: 12px;
-    border-color: #EEEEEE;
-    width: 1208px;
-    margin-left: 10px;
+  background: #ffffff 0 0 no-repeat padding-box;
+  box-shadow: 0 0 12px #0000000a;
+  border-radius: 12px;
+  border-color: #eeeeee;
+  width: 1208px;
+  margin-left: 10px;
 }
 
 .col {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .col1 {
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    padding: 50px;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  padding: 50px;
 }
 
 .col2 {
-    width: 50%;
+  width: 50%;
 }
 
 .company_info {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .gray {
-    background: #FAFAFA 0% 0% no-repeat padding-box;
+  background: #fafafa 0% 0% no-repeat padding-box;
 }
 
 .btn {
-    background: #2E6EDF 0 0 no-repeat padding-box;
-    border-radius: 6px;
-    opacity: 1;
-    color: #ffffff;
-    height: 48px;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 12px 25px;
-    transition: all 0.5s;
-    position: relative;
-    text-decoration: none;
-    width: 184px;
-    border-color: transparent !important;
+  background: #2e6edf 0 0 no-repeat padding-box;
+  border-radius: 6px;
+  opacity: 1;
+  color: #ffffff;
+  height: 48px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 12px 25px;
+  transition: all 0.5s;
+  position: relative;
+  text-decoration: none;
+  width: 184px;
+  border-color: transparent !important;
 }
 
 .btn::after {
-    font-family: "Gordita";
-    content: "\f061";
-    position: absolute;
-    left: 93%;
-    top: 31%;
-    right: 5%;
-    bottom: 0;
-    opacity: 0;
+  font-family: 'Gordita';
+  content: '\f061';
+  position: absolute;
+  left: 93%;
+  top: 31%;
+  right: 5%;
+  bottom: 0;
+  opacity: 0;
 }
 .recommendation {
-    width: 50%;
-    z-index: 9999;
-    margin-left: 300px;
+  width: 50%;
+  z-index: 9999;
+  margin-left: 300px;
 }
 
 .developer {
-    z-index: 9999;
-    margin-left: 300px;
-    width: 45%;
+  z-index: 9999;
+  margin-left: 300px;
+  width: 45%;
 }
 
 .partner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .header {
-    text-align: left;
-    width: 100%;
+  text-align: left;
+  width: 100%;
 }
 
 .faq {
-    width: 90%;
-    padding-top: 50px;
+  width: 90%;
+  padding-top: 50px;
 }
 
 .center {
-    width: 90%;
-    align-items: center;
-    text-align: center;
+  width: 90%;
+  align-items: center;
+  text-align: center;
 }
 
 .padding_content {
-    padding-top: 18px;
-    padding-bottom: 18px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .developer_box {
-    background: #FCFCFC 0% 0% no-repeat padding-box;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  background: #fcfcfc 0% 0% no-repeat padding-box;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.turing_demo_developer {
-    width: 60%;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 0px 12px #0000000A;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    margin-right: 120px;
-    margin-left: 15px;
+.iramai_demo_developer {
+  width: 60%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 12px #0000000a;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 120px;
+  margin-left: 15px;
 }
 
 .link {
-    font-family: "Gordita";
-    text-decoration: none !important;
-    color: #ffffff;
+  font-family: 'Gordita';
+  text-decoration: none !important;
+  color: #ffffff;
 }
 
 .order_img {
-    padding-top: 200px;
+  padding-top: 200px;
 }
 
 .btn:hover {
-    background: #2E6EDF 0 0 no-repeat padding-box;
-    transition: all 0.5s;
-    height: 52px;
-    width: 208px;
-    border-radius: 6px;
-    color: #ffffff;
-    padding: 14px 34px 14px 24px;
+  background: #2e6edf 0 0 no-repeat padding-box;
+  transition: all 0.5s;
+  height: 52px;
+  width: 208px;
+  border-radius: 6px;
+  color: #ffffff;
+  padding: 14px 34px 14px 24px;
 }
 
 .btn:hover::after {
-    opacity: 1;
-    transition: all 0.5s;
-    text-decoration: none !important;
+  opacity: 1;
+  transition: all 0.5s;
+  text-decoration: none !important;
 }
 
 .txt_lg {
-    text-align: left;
-    font-family: "Gordita";
-    font-weight: 300;
-    font-size: 50px;
-    line-height: 60px;
-    letter-spacing: 0;
-    color: #212121;
+  text-align: left;
+  font-family: 'Gordita';
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: 0;
+  color: #212121;
 }
 
 .txt_md {
-    font-family: "Gordita";
-    font-weight: 300;
-    font-size: 28px;
-    line-height: 30px;
-    letter-spacing: 0;
-    color: #212121;
+  font-family: 'Gordita';
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: 0;
+  color: #212121;
 }
 
 .txt_sm_pm {
-    padding-top: 40px;
+  padding-top: 40px;
 }
 
 .txt_sm {
-    font-family: "Gordita";
-    font-size: 16px;
-    letter-spacing: 0px;
-    color: #444444;
-    opacity: 1;
+  font-family: 'Gordita';
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #444444;
+  opacity: 1;
 }
 
 .title_page {
-    padding-bottom: 50px !important;
+  padding-bottom: 50px !important;
 }
 
 .img {
-    height: 353px;
-    width: 828px;
-    margin-top: 300px;
-    padding-right: 95px;
+  height: 353px;
+  width: 828px;
+  margin-top: 300px;
+  padding-right: 95px;
 }
 
 .padding_100 {
-    margin-top: 56px;
+  margin-top: 56px;
 }
 
 .hire_info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 160px;
-    padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 160px;
+  padding-bottom: 50px;
 }
 
 .circle {
-    width: 24px;
-    height: 24px;
-    padding: 4px;
-    margin: 0;
-    background-color: #2E6EDF;
-    border-radius: 50%;
-    color: #fff;
-    text-align: center;
-    font-size: 14px;
-    font-family: Gordita;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  margin: 0;
+  background-color: #2e6edf;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-family: Gordita;
 }
 
 .video {
-    width: 1208px;
-    height: 680px;
-    align-items: center;
-    z-index: 9999;
-    opacity: 0.5;
-    background: #212121 0% 0% no-repeat padding-box;
-    border-radius: 8px;
+  width: 1208px;
+  height: 680px;
+  align-items: center;
+  z-index: 9999;
+  opacity: 0.5;
+  background: #212121 0% 0% no-repeat padding-box;
+  border-radius: 8px;
 }
 
 .info {
-    display: flex;
-    flex-direction: row;
-    padding-top: 60px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 60px;
 }
 
 .info_col {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 768px) {
-    .order_img {
-        order: 2;
-        padding-top: 20px
-    }
+  .order_img {
+    order: 2;
+    padding-top: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
-    .offer_content .talent .turing_demo {
-        display: flex;
-        flex-direction: column;
-    }
+  .offer_content .talent .iramai_demo {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .for_company {
-        display: flex;
-        flex-direction: column;
-    }
+  .for_company {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .img {
-        margin-top: 0px;
-        height: 160px;
-        width: 366px;
-        padding-right: 0;
-    }
+  .img {
+    margin-top: 0px;
+    height: 160px;
+    width: 366px;
+    padding-right: 0;
+  }
 
-    .col1 {
-        width: 100%;
-        padding: 5px;
-    }
+  .col1 {
+    width: 100%;
+    padding: 5px;
+  }
 
-    .developer_box {
-        background: #FCFCFC 0% 0% no-repeat padding-box;
-        margin: 10px;
-    }
+  .developer_box {
+    background: #fcfcfc 0% 0% no-repeat padding-box;
+    margin: 10px;
+  }
 
-    .mb {
-        height: 204px;
-    }
+  .mb {
+    height: 204px;
+  }
 
-    .col2 {
-        width: 100%;
-        padding: 5px;
-        height: 204px;
-    }
+  .col2 {
+    width: 100%;
+    padding: 5px;
+    height: 204px;
+  }
 
-    .introduce {
-        padding-top: 70px;
-    }
+  .introduce {
+    padding-top: 70px;
+  }
 
-    .box {
-        margin-left: 0px;
-    }
+  .box {
+    margin-left: 0px;
+  }
 
-    .recommendation {
-        width: auto;
-        padding-left: 24px;
-        padding-right: 24px;
-        margin: 10px;
-        align-items: center;
-    }
+  .recommendation {
+    width: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 10px;
+    align-items: center;
+  }
 
-    .img_mb {
-        width: auto;
-        padding-left: 24px;
-        padding-right: 24px;
-        margin: 10px;
-        align-items: center;
-    }
+  .img_mb {
+    width: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 10px;
+    align-items: center;
+  }
 
-    .developer {
-        margin-left: 10px;
-        width: 100%;
-    }
+  .developer {
+    margin-left: 10px;
+    width: 100%;
+  }
 
-    .developer {
-        width: 100%;
-        margin-left: 0px;
-    }
+  .developer {
+    width: 100%;
+    margin-left: 0px;
+  }
 
-    .turing_demo_title  {
-        width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+  .iramai_demo_title {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-    .txt_lg {
-        font-size: 26px;
-        line-height: 30px;
-    }
+  .txt_lg {
+    font-size: 26px;
+    line-height: 30px;
+  }
 
-    .turing_demo_developer {
-        width: auto;
-        margin: 10px;
-    }
+  .iramai_demo_developer {
+    width: auto;
+    margin: 10px;
+  }
 }
 
 @media screen and (min-width: 769px) {
-    .intro {
-        min-height: 800px;
-        padding-top: 60px;
-    }
+  .intro {
+    min-height: 800px;
+    padding-top: 60px;
+  }
 }
 
 @media screen and (max-width: 768px) and (min-width: 768px) {
-    .section {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-    .offer_content .turing_demo {
-        display: flex;
-        flex-direction: column;
-    }
+  .section {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .offer_content .iramai_demo {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .turing_demo_title  {
-        width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .turing_demo_developer .talent_title .talent_img {
-        width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+  .iramai_demo_title {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .iramai_demo_developer .talent_title .talent_img {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
